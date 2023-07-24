@@ -1,0 +1,327 @@
+:root {
+  --container: 1800px;
+  --content: 872px ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 14.5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: none;
+  color: #ffffff;
+  border-radius: 1000px;
+  border: none;
+  cursor: pointer;
+}
+.btn.white {
+  color: rgb(0, 0, 0);
+  background-color: none;
+  border: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+}
+.btn.brown {
+  background: var(--korma, #9A500F);
+}
+
+section .hero-section {
+  background-image: url(../../images/background/dog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .hero-section .hero-container {
+  padding-bottom: 20px;
+  height: calc(100vh - 20px);
+  display: flex;
+  align-items: flex-end;
+}
+section .hero-section .hero-container .content-text {
+  padding: 40px;
+  background-blend-mode: normal, color-burn;
+  backdrop-filter: blur(20px);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 60px;
+  border-radius: 12px 64px 12px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+section .hero-section .hero-container .content-text .h1-text {
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -1.92px;
+  color: #ffffff;
+}
+section .hero-section .hero-container .content-text .text {
+  display: flex;
+  gap: 76px;
+}
+section .hero-section .hero-container .content-text .text .p-text {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  color: #ffffff;
+}
+section .gryming-section {
+  background-color: #F8F8F8;
+  padding: 120px 0;
+}
+section .gryming-section .gryming-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .gryming-section .gryming-container .help-gryming-text {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+section .gryming-section .gryming-container .help-gryming-text .h1-text {
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.56px;
+}
+section .gryming-section .gryming-container .help-gryming-text .h1-text .help {
+  color: rgba(0, 0, 0, 0.4);
+}
+section .gryming-section .gryming-container .help-gryming-text .small-text .h1-text {
+  display: block;
+  color: rgb(154, 80, 15);
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+section .gryming-section .gryming-container .help-gryming-text .small-text .p-text {
+  display: block;
+  padding-top: 20px;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  width: 454px;
+}
+section .gryming-section .gryming-container .main-procedoor {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+section .gryming-section .gryming-container .main-procedoor .content {
+  display: flex;
+  background-color: #ffffff;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px 64px 12px 12px;
+  border: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+}
+section .gryming-section .gryming-container .main-procedoor .content .h1-text {
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+}
+section .gryming-section .gryming-container .main-procedoor .content .p-text {
+  width: 354px;
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+section .types-grooming-section {
+  padding: 120px 0;
+  background-color: #F8F8F8;
+}
+section .types-grooming-section .types-grooming-container {
+  background-color: #ffffff;
+  border-radius: 64px;
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+section .types-grooming-section .types-grooming-container img {
+  transition: opacity 1.5s;
+}
+section .types-grooming-section .types-grooming-container .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+section .types-grooming-section .types-grooming-container .content .cards {
+  display: flex;
+  gap: 156px;
+  align-items: flex-start;
+}
+section .types-grooming-section .types-grooming-container .content .cards .parems {
+  width: 100%;
+}
+section .types-grooming-section .types-grooming-container .content .cards .types-grooming {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+  opacity: 0.400000006;
+}
+section .types-grooming-section .types-grooming-container .content .cards .types-grooming .brown-text {
+  display: inline-flex;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 36px */
+  letter-spacing: -0.6px;
+  color: rgb(154, 80, 15);
+}
+section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text {
+  width: 470px;
+}
+section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .h1-text {
+  display: inline-flex;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 36px */
+  letter-spacing: -0.6px;
+  padding-bottom: 0;
+  border: none;
+}
+section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .p-text {
+  display: inline-flex;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  width: 470px;
+}
+section .types-grooming-section .types-grooming-container .content .types-text {
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+}
+section .types-grooming-section .types-grooming-container .content .h1-text {
+  display: inline-block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+  width: 1170px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+}
+section .types-grooming-section .types-grooming-container .content .h1-text .grey-text {
+  color: rgba(0, 0, 0, 0.4);
+}
+section .types-grooming-section .types-grooming-container .content .types-grooming:hover {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+
+:root {
+  --container: 1800px;
+  --content: 872px ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  z-index: 999;
+}
+header .header-section .header-container .content-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1000px;
+  border: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+  padding: 12px 40px;
+  background-color: #ffffff;
+}
+header .header-section .header-container .content-main .start-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-section .header-container .content-main .start-content .text {
+  display: flex;
+  gap: 40px;
+  margin-left: 128px;
+}
+header .header-section .header-container .content-main .start-content .text span {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+header .header-section .header-container .content-main .start-content .text .black-text {
+  color: rgb(0, 0, 0);
+}
+header .header-section .header-container .content-main .end-content {
+  display: flex;
+  gap: 10px;
+}
+header .header-section .header-container .content-main .end-content button {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,186 @@
+section{
+    .hero-section{
+        background-image: url(../../images/background/dog.png);
+        @include background;
+        
+         
+        .hero-container{
+            padding-bottom: 20px;
+            height: calc(100vh - 20px);
+            display: flex;
+            align-items: flex-end;
+            .content-text{
+                
+                @include padding-desktop;
+                background-blend-mode: normal, color-burn;
+                backdrop-filter: blur(20px);
+                display: inline-flex;
+                flex-direction: column;
+                gap: 60px;
+                border-radius: 12px 64px 12px 0px;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                .h1-text{
+                    display: block;
+                    @include heading_96;
+                    color: $white;
+                   }
+                   .text{
+                    display: flex;
+                    gap: 76px;
+                    
+                    .p-text{
+                        @include heading_20;
+                        color: $white;
+                        
+                    }
+            }
+          
+           }
+        }
+    }
+    .gryming-section{
+        background-color: $white-blue;
+        @include padding-section;
+        
+        .gryming-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .help-gryming-text{
+                padding: 40px;
+                display: flex;
+                justify-content: space-between;
+                .h1-text{
+                    display: block;
+                    @include heading_78;
+                    .help{
+                        color: $grey;
+                    }
+                }
+                .small-text{
+                    .h1-text{
+                        display: block;
+                        color: $brown;
+                        padding-bottom: 70px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+                        //не робит ботом
+                    }
+                    .p-text{
+                        display: block;
+                        padding-top: 20px;
+                        @include heading_20;
+                        width: 454px;
+                    }
+                }
+            }
+            .main-procedoor{
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+                
+                .content{
+                    display: flex;
+                    background-color: $white;
+                    @include padding-desktop;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-radius: 12px 64px 12px 12px;
+                    border: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
+                    .types-text{
+                        
+                    }
+                    .h1-text{
+                        display: block;
+                        @include heading_48;
+                    }
+                    .p-text{
+                        width: 354px;
+                        display: block;
+                        @include heading_20;
+                    }
+                }
+            }
+        }
+    }
+    .types-grooming-section{
+        @include padding-section;
+        background-color: $white-blue;
+        .types-grooming-container{
+            background-color: $white;
+            border-radius: 64px;
+            @include padding-desktop;
+            margin-left: 20px;
+            margin-right: 20px;
+            img {
+                transition: opacity 1.5s;
+            }
+            .content{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                .cards{
+                    display: flex;
+                    gap: 156px;
+                    align-items: flex-start;
+                    .parems{
+                        width: 100%;
+                    }
+                    .types-grooming{
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        padding:40px 0 ;
+                        border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
+                        opacity: 0.4000000059604645;
+                        .brown-text{
+                            display: inline-flex;
+                            @include heading_30;
+                            color: $brown;
+                        }
+                        .text{
+                            width: 470px;
+                            .h1-text{
+                                display: inline-flex;
+                                @include heading_30;
+                                padding-bottom: 0;
+                                border: none;
+                               
+                            }
+                            .p-text{
+                                display: inline-flex;
+                                @include heading_20;
+                                width: 470px;
+                            }
+                        }
+                    }
+                }
+                .types-text{
+                    display: block;
+                    @include heading_20;
+                    color:$grey;
+                    margin-bottom: 40px;
+                }
+                .h1-text{
+                    display: inline-block;
+                    @include heading_48;
+                    width: 1170px;
+                    padding-bottom: 80px;
+                    border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
+                    .grey-text{
+                        color: $grey;
+                    }
+                }
+                    .types-grooming:hover{
+                        opacity: 1;
+                        transition: opacity 1.5s;
+                    }
+                    
+               
+                
+            }
+        }
+    }
+}

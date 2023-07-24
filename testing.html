@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    .container {
+    position: relative;
+    width: 300px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    transition: opacity 31.5s;
+}
+
+p {
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <div class="container">
+        <p onmouseover="changeImage('images/animate-image/ced-dog.png')" onmouseout="resetImage()">Текст 1</p>
+        <p onmouseover="changeImage('images/animate-image/funny-dog.png')" onmouseout="resetImage()">Текст 2</p>
+        <p onmouseover="changeImage('images/animate-image/photo-dog.png')" onmouseout="resetImage()">Текст 3</p>
+        <img id="image" src="images/animate-image/ced-dog.png" alt="Изображение">
+    </div>
+
+    <script >
+        function changeImage(newImage) {
+    var image = document.getElementById('image');
+    image.src = newImage;
+}
+
+function resetImage() {
+    var image = document.getElementById('image');
+    image.src = 'images/animate-image/funny-dog.png';
+}
+
+    </script>
+</body>
+</html>
