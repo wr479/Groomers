@@ -80,11 +80,17 @@ $grey:rgba(0, 0, 0, .4);
     font-size: 24px;
     font-weight: 400;
 }@mixin heading_16(){
-    font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 19.2px */
+}@mixin heading_big(){
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 273px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 279.529px */
+    letter-spacing: -12.706px;
 }
 // компоненты
 

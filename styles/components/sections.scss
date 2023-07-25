@@ -87,6 +87,7 @@ section{
                     flex-direction: column;
                     justify-content: space-between;
                     border-radius: 12px 64px 12px 12px;
+                    width: 676px;
                     border: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
                     .types-text{
                         
@@ -120,6 +121,12 @@ section{
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
+                .text-types{
+                    display: flex;
+                    flex-direction: column;
+                    align-content: flex-end;
+                    flex-wrap: wrap;
+                }
                 .cards{
                     display: flex;
                     gap: 156px;
@@ -147,6 +154,7 @@ section{
                                 @include heading_30;
                                 padding-bottom: 0;
                                 border: none;
+                                width: 100%;
                                
                             }
                             .p-text{
@@ -180,6 +188,340 @@ section{
                     
                
                 
+            }
+        }
+    }
+    .stages-section{
+        background-color: #F8F8F8;
+        @include padding-section;
+        .stages-container{
+            .h1-text{
+                @include heading_big;
+                color:rgba(0, 0, 0, 0.10);
+            }
+            .grids{
+                margin-top: -70px;
+                display: grid;
+                grid-template-columns: [col1] 50% [col2] 23% [col3] 25%;
+                grid-gap: 20px;
+                grid-template-rows: [row1] 62% [row2] 85%;
+                .h1-text{
+                    display: block;
+                    @include heading_30;
+                    color: $brown;
+                }
+                .p-text{
+                    @include heading_20;
+                    display: block;
+                }
+                .two{
+                    border-radius: 12px 64px 12px 12px;
+                }
+                .three{
+                    border-radius: 12px 12px 64px 12px;
+                }
+                .four{
+                    border-radius: 12px 64px 12px 12px;
+                }
+                .five{
+                    border-radius: 12px 64px 12px 12px;
+                }
+                .two,.three,.four,.five{
+                    border: 1px solid  rgba(0, 0, 0, 0.10);
+                    background-color: $white;
+                    @include padding-desktop;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .ped-one{
+                    grid-column: 1 ;
+                    grid-row: 1 / 3;
+                    background-color: $brown;
+                    border-radius: 12px 64px 12px 12px;
+                    @include padding-desktop;
+                    width: 890px;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    display: flex;
+                    @include background;
+                    background-image: url(../../images/background/cat-bg.png);
+                        .p-text{
+                            @include heading_30;
+                            color: $white;
+                            display: block;
+                            width: 719px;
+                        }
+                        .end-one{
+                            display: flex;
+                            justify-content: space-between;
+                            .h1-text{
+                                @include heading_78;
+                                color: $grey-blue;
+                            }
+                        }
+                    
+                }
+            }
+        }
+    }
+    .banner-section{
+        background-color: #F8F8F8;
+        @include padding-section;
+        padding-top:240px ;
+        
+        .banner-container{
+            display: flex;
+            gap: 24px;
+            background-color: $grey-blue;
+            border-radius: 12px 64px 12px 0px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            .banner-text{
+                @include padding-desktop;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .h1-text{
+                    display: block;
+                    @include heading_78;
+                    color: $brown;
+                }
+                .button-procedoor{
+                    width: 100%;
+                    background: none;
+                    border: 1px solid $brown;
+                    padding: 20px 0;
+                    border-radius: 1000px;
+                }
+            }
+        }
+    }
+    .hero-about-section{
+        padding-top: 144px;
+        background-color: #F8F8F8;
+        .hero-about-container{
+            padding-bottom:80px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            
+        }
+    }
+    .groomers-content-section{
+        background-color: #F8F8F8;
+        .groomers-content-container{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            @include padding-section;
+            .h1-text{
+                display: block;
+                @include heading_48;
+                width: 1106px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .p-text{
+                    @include heading_20;
+                    display: block;
+                    margin-right: 234px;
+                    width: 452px;
+                    margin-top: 60;
+                    margin-bottom: 80px;
+                }
+            }
+           
+        }
+    }
+    .command-section{
+        background-color: #F8F8F8;
+        .command-container{
+            padding: 200px 0;
+            text-align: center;
+            .h1-text{
+                display: inline-block;
+                @include heading_96;
+                width: 1358px;
+                
+                .brown-text{
+                    color: $brown;
+                }
+            }
+            .contant-card{
+                margin-top: 120px;
+                display: flex;
+                justify-content: space-between;
+                .p-text{
+                    display: block;
+                    @include heading_20;
+                    color: rgba(0, 0, 0, 0.40);
+                    text-align: left;
+                }
+                .cards{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    .card{
+                        @include padding-desktop;
+                        background-color: $white;
+                        text-align: left;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 120px;
+                        border-radius: 12px 64px 12px 12px;
+                        border: 1px solid  rgba(0, 0, 0, 0.10);
+                        .start{
+                            .name{
+                                display: block;
+                                @include heading_48;
+                            }
+                            .job{
+                                display: block;
+                                @include heading_20;
+                                color: rgba(0, 0, 0, 0.40);
+                            }
+                        }
+                        .end{
+                            .history{
+                                display: block;
+                                @include heading_20;
+                                width: 495px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .reviews-section{
+        background-color: #F8F8F8;
+        padding-top: 200px;
+        .reviews-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 95px;
+            .h1-text{
+                display: block;
+                @include heading_96;
+                width: 1191px;
+                .brown-text{
+                    color: $brown;
+                }
+
+            }
+            button{
+                width: 890px;
+                @include heading_20;
+                padding: 20px 0;
+                background: none;
+                border-radius: 1000px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                cursor: pointer;
+            }
+            .cards{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+                .card{
+                    border-radius:64px 12px  12px 12px;
+                    border: 1px solid rgba(0, 0, 0, 0.10);
+                    background-color: $white;
+                    @include padding-desktop;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 80px;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                    .start{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        .jov-name{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            .name{
+                                display: block;
+                                @include heading_30;
+                            }
+                            .job{
+                                display: block;
+                                @include heading_16;
+                                color:rgba(0, 0, 0, 0.40);
+                            }
+                        }
+                    }
+                    .end{
+                        .history{
+                            display: block;
+                            width: 354px;
+                            @include heading_20;
+                        }
+                    }
+                }
+                .two-card{
+                    background-color: $white;
+                    border-radius: 12px 64px 12px 12px;
+                    border: 1px solid  rgba(0, 0, 0, 0.10);
+                    
+                }
+            }
+        }
+    }
+    .error-section{
+        background-color: #F8F8F8;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        .error-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            .content{
+                border-radius: 12px 64px 12px 12px;
+                border: 1px solid rgba(0, 0, 0, 0.10);
+                width: 1068px;
+                margin-right: 0;
+                @include padding-desktop;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: stretch;
+                gap: 120px;
+                .h1-text{
+                    display: block;
+                    @include heading_78;
+                    width: 913px;
+                }
+                .end{
+                    display: flex;
+                    justify-content: space-between;
+                    .p-text{
+                        margin-top: 57px;
+                        display: block;
+                        @include heading_30;
+                        color: rgba(0, 0, 0, 0.40);
+                    }
+                    .buttom{
+                        width: 484px;
+                        @include heading_20;
+                        padding: 20px 0;
+                        background-color: $brown;
+                        color: $white;
+                        border: none;
+                        border-radius: 1000px;
+                    }
+                }
             }
         }
     }

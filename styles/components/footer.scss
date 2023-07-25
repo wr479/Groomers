@@ -1,0 +1,38 @@
+footer{
+    background-color: #F8F8F8;
+    @include padding-section;
+    padding-bottom: 0;
+    .footer-section{
+        background-color: $black;
+            padding-top: 28px;
+            padding-bottom: 60px;
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 200px;
+            .footer-end{
+                display: flex;
+                justify-content: space-between;
+                .def{
+                    display: block;
+                    @include heading_20;
+                    color: $white;
+                    width: 250px;
+                }
+                .politic{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    span{
+                        @include heading_16;
+                        display: block;
+                        color: $white;
+                        opacity: 0.4000000059604645;
+                    }
+                }
+            }
+        }
+    }
+}

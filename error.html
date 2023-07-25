@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Groomer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    </head>
+<body>
+    <header>
+        <div class="header-section">
+            <div class="header-container container">
+                <div class="content-main">
+                    <div class="start-content">
+                        <a href="index.html"><img src="images/logos/logo.svg"></a>
+                        <div class="text">
+                            <a href="index.html"><span class="black-text">Главная</span></a>
+                            <a href="about.html"><span>О нас</span></a>
+                            <a href="price.html"><span>Прайс лист</span></a>
+                            <a href="reviews.html"><span>Отзывы</span></a>
+                        </div>
+                    </div>
+                    <div class="end-content">
+                        <button class="btn white popup-open">Обратный звонок</button>
+                        <button class="btn brown">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-fade">
+            <div class="popup">
+                <div class="panel">
+                    <div class="back-call">
+                        <span class="h1-text">Обратный звонок</span>
+                        <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
+                    </div>
+                    <div class="input">
+                        <input placeholder="Фамилия и Имя">
+                        <input placeholder="Номер телефона">
+                        <input placeholder="Тип вопроса">
+                        <button>Отправить</button>
+                    </div>
+                </div>
+                
+                
+            </div>		
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="error-section">
+                <div class="error-container container">
+                    <img src="images/gallery/dog.png">
+                    <div class="content">
+                        <span class="h1-text">К сожалению, такой страницы не существует</span>
+                        <div class="end">
+                            <span class="p-text">Ошибка 404</span>
+                            <a><button class="buttom">На главную</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function($) {
+	$('.popup-open').click(function() {
+		$('.popup-fade').fadeIn();
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -24,10 +24,14 @@ header{
                         display: flex;
                         gap: 40px;
                         margin-left: 128px;
+                        a{
+                            text-decoration: none;
+                        }
                         span{
                             display: block;
                             color: $grey;
                             @include heading_16;
+                            
                         };
                         .black-text{
                             color: $black;
