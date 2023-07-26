@@ -18,18 +18,36 @@
                     <div class="start-content">
                         <a href="index.html"><img src="images/logos/logo.svg"></a>
                         <div class="text">
-                            <a href="index.html"><span >Главная</span></a>
+                            <a href="index.html"><span>Главная</span></a>
                             <a href="about.html"><span>О нас</span></a>
                             <a href="price.html"><span>Прайс лист</span></a>
-                            <a href="reviews.html" class="black-text"><span>Отзывы</span></a>
+                            <a href="reviews.html"><span class="black-text">Отзывы</span></a>
                         </div>
                     </div>
                     <div class="end-content">
-                        <button class="btn white">Обратный звонок</button>
+                        <button class="btn white popup-open">Обратный звонок</button>
                         <button class="btn brown">Оставить заявку</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="popup-fade">
+            <div class="popup">
+                <div class="panel">
+                    <div class="back-call">
+                        <span class="h1-text">Обратный звонок</span>
+                        <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
+                    </div>
+                    <div class="input">
+                        <input placeholder="Фамилия и Имя">
+                        <input placeholder="Номер телефона">
+                        <input placeholder="Тип вопроса">
+                        <button>Отправить</button>
+                    </div>
+                </div>
+                
+                
+            </div>		
         </div>
     </header>
     <main>
@@ -168,5 +186,7 @@
         </div>
        
     </footer>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script type="module" src="scripts/app.js" ></script>
 </body>
 </html>

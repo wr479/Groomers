@@ -1,6 +1,6 @@
 section{
     .hero-section{
-        background-image: url(../../images/background/dog.png);
+        background-image: url(../images/animate-image/background/dog.png);
         @include background;
         
          
@@ -249,7 +249,7 @@ section{
                     justify-content: space-between;
                     display: flex;
                     @include background;
-                    background-image: url(../../images/background/cat-bg.png);
+                    background-image: url(../../images/animate-image/background/cat-bg.png);
                         .p-text{
                             @include heading_30;
                             color: $white;
@@ -486,6 +486,9 @@ section{
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            img{
+                margin-right: 480px;
+            }
             .content{
                 border-radius: 12px 64px 12px 12px;
                 border: 1px solid rgba(0, 0, 0, 0.10);
@@ -520,6 +523,115 @@ section{
                         color: $white;
                         border: none;
                         border-radius: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    .hero-block-section{
+        background-color: #F8F8F8;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        .hero-block-container{
+            display: flex;
+            flex-direction: column;
+            gap: 120px;
+            .h1-text{
+                @include heading_48;
+                display: block;
+                width: 1106px;
+                .brown-text{
+                    color: $brown;
+                }
+            }
+            .prices{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                img{
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 100px;
+                }
+                .padding-top{
+                    border-top: 1px solid rgba(0, 0, 0, 0.10);;
+                }
+                .flex{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .price{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1170px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+                    padding: 40px 0 ;
+                    margin-right: 60px;
+                    .brown-text{
+                        @include heading_30;
+                        color: $brown;
+                        display: inline-flex;
+                        width: 233px;
+                    }
+                    .content{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 80px;
+                        max-width: 516px;
+                        .text{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            .h1-text{
+                                display: inline-flex;
+                                @include heading_30;
+                                max-width: 401px;
+                            }
+                            .p-text{
+                                @include heading_20;
+                                display: block;
+                                max-width: 470px;
+                            }
+                        }
+                        ul{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr ;
+                            padding: 0;
+                            margin: 0;
+                            text-align: left;
+                            
+                            li{
+                                color: rgba(0, 0, 0, 0.40);
+                                max-width: 172px;
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    .price-text{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 234px;
+                        text-align: right;
+                        align-items: flex-end;
+                        .end{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            
+                            .brown-text-h1{
+                                display: block;
+                                @include heading_48;
+                                color: $brown;
+                            }
+                            .grey-text{
+                                opacity: 0.20000000298023224;
+                                display: block;
+                                @include heading_16;
+                            }
+                        }
+
+                        
                     }
                 }
             }

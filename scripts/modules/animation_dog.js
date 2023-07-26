@@ -8,11 +8,15 @@ export function animation_dog(){
 
     function changeImage(newImage) {
         var image = document.getElementById('image');
-        image.src = newImage;
+        if(image){
+            image.src = newImage;
+        }
     }
     
     function resetImage() {
         var image = document.getElementById('image');
-        image.src = 'images/animate-image/funny-dog.png';
+        if(image){
+            image.src = 'images/animate-image/funny-dog.png';
+        }
     }
 }

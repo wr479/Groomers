@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
 }
 
 body, html {
@@ -15,6 +16,27 @@ body, html {
 .container {
   max-width: var(--container);
   margin: 0 auto;
+}
+
+.d-none {
+  display: none !important;
+}
+
+input {
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid #9A0F0F;
+  color: #9A0F0F;
+}
+
+input::placeholder:invalid {
+  color: #9A0F0F;
+}
+
+input:focus:invalid {
+  box-shadow: none;
 }
 
 .btn {
@@ -38,8 +60,58 @@ body, html {
   background: var(--korma, #9A500F);
 }
 
+.black-text {
+  color: rgb(0, 0, 0);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown-list {
+  text-decoration: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 20px;
+}
+.dropdown .dropdown-list span {
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  padding: 23px 20px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  max-width: 444px;
+}
+.dropdown .dropdown-list span:hover {
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  padding: 23px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 40px;
+}
+
 section .hero-section {
-  background-image: url(../../images/background/dog.png);
+  background-image: url(../images/animate-image/background/dog.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +134,6 @@ section .hero-section .hero-container .content-text {
 }
 section .hero-section .hero-container .content-text .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +146,6 @@ section .hero-section .hero-container .content-text .text {
   gap: 76px;
 }
 section .hero-section .hero-container .content-text .text .p-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -99,7 +169,6 @@ section .gryming-section .gryming-container .help-gryming-text {
 }
 section .gryming-section .gryming-container .help-gryming-text .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 78px;
   font-style: normal;
   font-weight: 500;
@@ -118,7 +187,6 @@ section .gryming-section .gryming-container .help-gryming-text .small-text .h1-t
 section .gryming-section .gryming-container .help-gryming-text .small-text .p-text {
   display: block;
   padding-top: 20px;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -142,7 +210,6 @@ section .gryming-section .gryming-container .main-procedoor .content {
 }
 section .gryming-section .gryming-container .main-procedoor .content .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -152,7 +219,6 @@ section .gryming-section .gryming-container .main-procedoor .content .h1-text {
 section .gryming-section .gryming-container .main-procedoor .content .p-text {
   width: 354px;
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -202,7 +268,6 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .brown-text {
   display: inline-flex;
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -215,7 +280,6 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .h1-text {
   display: inline-flex;
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -227,7 +291,6 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .p-text {
   display: inline-flex;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -236,7 +299,6 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 section .types-grooming-section .types-grooming-container .content .types-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -246,7 +308,6 @@ section .types-grooming-section .types-grooming-container .content .types-text {
 }
 section .types-grooming-section .types-grooming-container .content .h1-text {
   display: inline-block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -268,7 +329,6 @@ section .stages-section {
   padding: 120px 0;
 }
 section .stages-section .stages-container .h1-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 273px;
   font-style: normal;
   font-weight: 400;
@@ -285,7 +345,6 @@ section .stages-section .stages-container .grids {
 }
 section .stages-section .stages-container .grids .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -294,7 +353,6 @@ section .stages-section .stages-container .grids .h1-text {
   color: rgb(154, 80, 15);
 }
 section .stages-section .stages-container .grids .p-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -338,10 +396,9 @@ section .stages-section .stages-container .grids .ped-one {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../images/background/cat-bg.png);
+  background-image: url(../../images/animate-image/background/cat-bg.png);
 }
 section .stages-section .stages-container .grids .ped-one .p-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -356,7 +413,6 @@ section .stages-section .stages-container .grids .ped-one .end-one {
   justify-content: space-between;
 }
 section .stages-section .stages-container .grids .ped-one .end-one .h1-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 78px;
   font-style: normal;
   font-weight: 500;
@@ -384,7 +440,6 @@ section .banner-section .banner-container .banner-text {
 }
 section .banner-section .banner-container .banner-text .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 78px;
   font-style: normal;
   font-weight: 500;
@@ -416,7 +471,6 @@ section .groomers-content-section .groomers-content-container {
 }
 section .groomers-content-section .groomers-content-container .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -430,7 +484,6 @@ section .groomers-content-section .groomers-content-container .content {
   align-items: flex-end;
 }
 section .groomers-content-section .groomers-content-container .content .p-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -450,7 +503,6 @@ section .command-section .command-container {
 }
 section .command-section .command-container .h1-text {
   display: inline-block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
@@ -468,7 +520,6 @@ section .command-section .command-container .contant-card {
 }
 section .command-section .command-container .contant-card .p-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -494,7 +545,6 @@ section .command-section .command-container .contant-card .cards .card {
 }
 section .command-section .command-container .contant-card .cards .card .start .name {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -503,7 +553,6 @@ section .command-section .command-container .contant-card .cards .card .start .n
 }
 section .command-section .command-container .contant-card .cards .card .start .job {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -512,7 +561,6 @@ section .command-section .command-container .contant-card .cards .card .start .j
 }
 section .command-section .command-container .contant-card .cards .card .end .history {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -532,7 +580,6 @@ section .reviews-section .reviews-container {
 }
 section .reviews-section .reviews-container .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
@@ -545,7 +592,6 @@ section .reviews-section .reviews-container .h1-text .brown-text {
 }
 section .reviews-section .reviews-container button {
   width: 890px;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -587,7 +633,6 @@ section .reviews-section .reviews-container .cards .card .start .jov-name {
 }
 section .reviews-section .reviews-container .cards .card .start .jov-name .name {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -605,7 +650,6 @@ section .reviews-section .reviews-container .cards .card .start .jov-name .job {
 section .reviews-section .reviews-container .cards .card .end .history {
   display: block;
   width: 354px;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -627,6 +671,9 @@ section .error-section .error-container {
   flex-wrap: wrap;
   align-items: center;
 }
+section .error-section .error-container img {
+  margin-right: 480px;
+}
 section .error-section .error-container .content {
   border-radius: 12px 64px 12px 12px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -642,7 +689,6 @@ section .error-section .error-container .content {
 }
 section .error-section .error-container .content .h1-text {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 78px;
   font-style: normal;
   font-weight: 500;
@@ -657,7 +703,6 @@ section .error-section .error-container .content .end {
 section .error-section .error-container .content .end .p-text {
   margin-top: 57px;
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -667,7 +712,6 @@ section .error-section .error-container .content .end .p-text {
 }
 section .error-section .error-container .content .end .buttom {
   width: 484px;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -678,8 +722,135 @@ section .error-section .error-container .content .end .buttom {
   border: none;
   border-radius: 1000px;
 }
+section .hero-block-section {
+  background-color: #F8F8F8;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+section .hero-block-section .hero-block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+section .hero-block-section .hero-block-container .h1-text {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+  display: block;
+  width: 1106px;
+}
+section .hero-block-section .hero-block-container .h1-text .brown-text {
+  color: rgb(154, 80, 15);
+}
+section .hero-block-section .hero-block-container .prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section .hero-block-section .hero-block-container .prices img {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+section .hero-block-section .hero-block-container .prices .padding-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+section .hero-block-section .hero-block-container .prices .flex {
+  display: flex;
+  flex-direction: column;
+}
+section .hero-block-section .hero-block-container .prices .price {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  margin-right: 60px;
+}
+section .hero-block-section .hero-block-container .prices .price .brown-text {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 36px */
+  letter-spacing: -0.6px;
+  color: rgb(154, 80, 15);
+  display: inline-flex;
+  width: 233px;
+}
+section .hero-block-section .hero-block-container .prices .price .content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 516px;
+}
+section .hero-block-section .hero-block-container .prices .price .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+section .hero-block-section .hero-block-container .prices .price .content .text .h1-text {
+  display: inline-flex;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 36px */
+  letter-spacing: -0.6px;
+  max-width: 401px;
+}
+section .hero-block-section .hero-block-container .prices .price .content .text .p-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  display: block;
+  max-width: 470px;
+}
+section .hero-block-section .hero-block-container .prices .price .content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+section .hero-block-section .hero-block-container .prices .price .content ul li {
+  color: rgba(0, 0, 0, 0.4);
+  max-width: 172px;
+  margin-left: 20px;
+}
+section .hero-block-section .hero-block-container .prices .price .price-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 234px;
+  text-align: right;
+  align-items: flex-end;
+}
+section .hero-block-section .hero-block-container .prices .price .price-text .end {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .hero-block-section .hero-block-container .prices .price .price-text .end .brown-text-h1 {
+  display: block;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 52.8px */
+  letter-spacing: -0.96px;
+  color: rgb(154, 80, 15);
+}
+section .hero-block-section .hero-block-container .prices .price .price-text .end .grey-text {
+  opacity: 0.200000003;
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
 
-popup-fade {
+.popup-fade {
   display: none;
 }
 
@@ -725,7 +896,6 @@ popup-fade {
   justify-content: space-between;
 }
 .back-call .h1-text {
-  font-family: "Inter Tight", sans-serif;
   font-size: 78px;
   font-style: normal;
   font-weight: 500;
@@ -743,7 +913,6 @@ popup-fade {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 484px;
   padding: 20px 40px;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -755,11 +924,91 @@ popup-fade {
   width: 484px;
   border-radius: 1000px;
   border: none;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 24px */
+}
+
+.popup-fade-2 {
+  display: none;
+}
+
+.popup-fade-2:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup-2 {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  margin-left: -550px;
+  background: #fff;
+  border-radius: 12px 64px 12px 12px;
+  border: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
+  background: var(--white, #FFF);
+  z-index: 99999;
+  opacity: 1;
+  width: 1068px;
+  padding: 40px;
+}
+
+.panel {
+  display: flex;
+  gap: 160px;
+  display: flex;
+  gap: 160px;
+  flex-direction: column;
+}
+
+.back-call {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.back-call .h1-text {
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.56px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.input input {
+  border-radius: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 484px;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+.input button {
+  color: #ffffff;
+  background-color: rgb(154, 80, 15);
+  width: 484px;
+  border-radius: 1000px;
+  border: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  cursor: pointer;
 }
 
 footer {
@@ -784,7 +1033,6 @@ footer .footer-section .footer-container .footer-end {
 }
 footer .footer-section .footer-container .footer-end .def {
   display: block;
-  font-family: "Inter Tight", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -815,6 +1063,7 @@ footer .footer-section .footer-container .footer-end .politic span {
 
 * {
   box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
 }
 
 body, html {
@@ -825,6 +1074,27 @@ body, html {
 .container {
   max-width: var(--container);
   margin: 0 auto;
+}
+
+.d-none {
+  display: none !important;
+}
+
+input {
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid #9A0F0F;
+  color: #9A0F0F;
+}
+
+input::placeholder:invalid {
+  color: #9A0F0F;
+}
+
+input:focus:invalid {
+  box-shadow: none;
 }
 
 header {

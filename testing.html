@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Выберите категорию груминга</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .selected-category {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+      cursor: pointer;
+    }
+
+    .dropdown-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: none;
+    }
+
+    .dropdown-list li {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .dropdown-list li:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
 </head>
-<style>
-    .container {
-    position: relative;
-    width: 300px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    transition: opacity 31.5s;
-}
-
-p {
-    cursor: pointer;
-}
-
-</style>
 <body>
-    <div class="container">
-        <p onmouseover="changeImage('images/animate-image/ced-dog.png')" onmouseout="resetImage()">Текст 1</p>
-        <p onmouseover="changeImage('images/animate-image/funny-dog.png')" onmouseout="resetImage()">Текст 2</p>
-        <p onmouseover="changeImage('images/animate-image/photo-dog.png')" onmouseout="resetImage()">Текст 3</p>
-        <img id="image" src="images/animate-image/ced-dog.png" alt="Изображение">
-    </div>
+  <div class="dropdown">
+    <input type="text" class="selected-category" placeholder="Выберите категорию">
+    <ul class="dropdown-list">
+      <li data-value="Гигиенический груминг">Гигиенический груминг</li>
+      <li data-value="Профессиональный груминг">Профессиональный груминг</li>
+      <li data-value="Эстетический груминг">Эстетический груминг</li>
+    </ul>
+  </div>
 
-    <script >
-        function changeImage(newImage) {
-    var image = document.getElementById('image');
-    image.src = newImage;
-}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".selected-category").on("click", function () {
+        $(".dropdown-list").toggle();
+      });
 
-function resetImage() {
-    var image = document.getElementById('image');
-    image.src = 'images/animate-image/funny-dog.png';
-}
+      $(".dropdown-list li").on("click", function () {
+        const selectedValue = $(this).attr("data-value");
+        $(".selected-category").val(selectedValue);
+        $(".dropdown-list").hide();
+      });
 
-    </script>
+      $(document).on("click", function (event) {
+        if (!$(event.target).closest(".dropdown").length) {
+          $(".dropdown-list").hide();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
