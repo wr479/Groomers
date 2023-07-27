@@ -6,7 +6,7 @@ section{
          
         .hero-container{
             padding-bottom: 20px;
-            height: calc(100vh - 20px);
+            height: calc(100vh);
             display: flex;
             align-items: flex-end;
             .content-text{
@@ -51,7 +51,10 @@ section{
             .help-gryming-text{
                 padding: 40px;
                 display: flex;
-                justify-content: space-between;
+                gap: 94px;
+                .parara{
+                    width: 991px;
+                }
                 .h1-text{
                     display: block;
                     @include heading_78;
@@ -111,11 +114,13 @@ section{
         .types-grooming-container{
             background-color: $white;
             border-radius: 64px;
-            @include padding-desktop;
             margin-left: 20px;
             margin-right: 20px;
+            padding: 120px 40px;
             img {
                 transition: opacity 1.5s;
+                position: sticky;
+                top: 150px;
             }
             .content{
                 display: flex;
@@ -149,6 +154,9 @@ section{
                         }
                         .text{
                             width: 470px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
                             .h1-text{
                                 display: inline-flex;
                                 @include heading_30;
@@ -195,9 +203,8 @@ section{
         background-color: #F8F8F8;
         @include padding-section;
         .stages-container{
-            .h1-text{
-                @include heading_big;
-                color:rgba(0, 0, 0, 0.10);
+            img{
+                max-width: 100%;
             }
             .grids{
                 margin-top: -70px;
@@ -258,7 +265,7 @@ section{
                         }
                         .end-one{
                             display: flex;
-                            justify-content: space-between;
+                            gap: 566px;
                             .h1-text{
                                 @include heading_78;
                                 color: $grey-blue;
@@ -374,6 +381,13 @@ section{
                         border-radius: 12px 64px 12px 12px;
                         border: 1px solid  rgba(0, 0, 0, 0.10);
                         .start{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                            align-items: flex-start;
+                            .name-job{
+                                gap: 20px;
+                            }
                             .name{
                                 display: block;
                                 @include heading_48;
@@ -509,6 +523,7 @@ section{
                 .end{
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-end;
                     .p-text{
                         margin-top: 57px;
                         display: block;
@@ -531,7 +546,7 @@ section{
     .hero-block-section{
         background-color: #F8F8F8;
         padding-top: 200px;
-        padding-bottom: 200px;
+        padding-bottom: 0px;
         .hero-block-container{
             display: flex;
             flex-direction: column;
@@ -614,6 +629,9 @@ section{
                         width: 234px;
                         text-align: right;
                         align-items: flex-end;
+                        button{
+                            font-size: 16px;
+                        }
                         .end{
                             display: flex;
                             flex-direction: column;

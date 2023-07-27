@@ -90,7 +90,8 @@ $grey:rgba(0, 0, 0, .4);
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Manrope', sans-serif;
+
 }
 
 body, html{
@@ -119,4 +120,7 @@ input::placeholder:invalid{
   
   input:focus:invalid {
     box-shadow: none;
+  }
+  a{
+    text-decoration: none;
   }

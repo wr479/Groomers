@@ -5,7 +5,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 body, html {
@@ -37,6 +37,10 @@ input::placeholder:invalid {
 
 input:focus:invalid {
   box-shadow: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -118,7 +122,7 @@ section .hero-section {
 }
 section .hero-section .hero-container {
   padding-bottom: 20px;
-  height: calc(100vh - 20px);
+  height: 100vh;
   display: flex;
   align-items: flex-end;
 }
@@ -165,7 +169,10 @@ section .gryming-section .gryming-container {
 section .gryming-section .gryming-container .help-gryming-text {
   padding: 40px;
   display: flex;
-  justify-content: space-between;
+  gap: 94px;
+}
+section .gryming-section .gryming-container .help-gryming-text .parara {
+  width: 991px;
 }
 section .gryming-section .gryming-container .help-gryming-text .h1-text {
   display: block;
@@ -231,12 +238,14 @@ section .types-grooming-section {
 section .types-grooming-section .types-grooming-container {
   background-color: #ffffff;
   border-radius: 64px;
-  padding: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  padding: 120px 40px;
 }
 section .types-grooming-section .types-grooming-container img {
   transition: opacity 1.5s;
+  position: sticky;
+  top: 150px;
 }
 section .types-grooming-section .types-grooming-container .content {
   display: flex;
@@ -277,6 +286,9 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text {
   width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .h1-text {
   display: inline-flex;
@@ -328,13 +340,8 @@ section .stages-section {
   background-color: #F8F8F8;
   padding: 120px 0;
 }
-section .stages-section .stages-container .h1-text {
-  font-size: 273px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 279.529px */
-  letter-spacing: -12.706px;
-  color: rgba(0, 0, 0, 0.1);
+section .stages-section .stages-container img {
+  max-width: 100%;
 }
 section .stages-section .stages-container .grids {
   margin-top: -70px;
@@ -410,7 +417,7 @@ section .stages-section .stages-container .grids .ped-one .p-text {
 }
 section .stages-section .stages-container .grids .ped-one .end-one {
   display: flex;
-  justify-content: space-between;
+  gap: 566px;
 }
 section .stages-section .stages-container .grids .ped-one .end-one .h1-text {
   font-size: 78px;
@@ -542,6 +549,15 @@ section .command-section .command-container .contant-card .cards .card {
   gap: 120px;
   border-radius: 12px 64px 12px 12px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+section .command-section .command-container .contant-card .cards .card .start {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+section .command-section .command-container .contant-card .cards .card .start .name-job {
+  gap: 20px;
 }
 section .command-section .command-container .contant-card .cards .card .start .name {
   display: block;
@@ -699,6 +715,7 @@ section .error-section .error-container .content .h1-text {
 section .error-section .error-container .content .end {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 section .error-section .error-container .content .end .p-text {
   margin-top: 57px;
@@ -725,7 +742,7 @@ section .error-section .error-container .content .end .buttom {
 section .hero-block-section {
   background-color: #F8F8F8;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 0px;
 }
 section .hero-block-section .hero-block-container {
   display: flex;
@@ -826,6 +843,9 @@ section .hero-block-section .hero-block-container .prices .price .price-text {
   width: 234px;
   text-align: right;
   align-items: flex-end;
+}
+section .hero-block-section .hero-block-container .prices .price .price-text button {
+  font-size: 16px;
 }
 section .hero-block-section .hero-block-container .prices .price .price-text .end {
   display: flex;
@@ -1031,6 +1051,10 @@ footer .footer-section .footer-container .footer-end {
   display: flex;
   justify-content: space-between;
 }
+footer .footer-section .footer-container .footer-end .end {
+  display: flex;
+  gap: 322px;
+}
 footer .footer-section .footer-container .footer-end .def {
   display: block;
   font-size: 20px;
@@ -1063,7 +1087,7 @@ footer .footer-section .footer-container .footer-end .politic span {
 
 * {
   box-sizing: border-box;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 body, html {
@@ -1095,6 +1119,10 @@ input::placeholder:invalid {
 
 input:focus:invalid {
   box-shadow: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
