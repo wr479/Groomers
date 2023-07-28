@@ -1,6 +1,9 @@
 .dropdown{
     position: relative;
     .dropdown-list{
+        display: none;
+    }
+    .dropdown-list-hover{
         text-decoration: none;
         position: absolute;
         background-color:$white ;

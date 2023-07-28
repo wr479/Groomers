@@ -47,7 +47,7 @@ section{
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-between;
-            
+            gap: 80px;
             .help-gryming-text{
                 padding: 40px;
                 display: flex;
@@ -147,6 +147,9 @@ section{
                         padding:40px 0 ;
                         border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
                         opacity: 0.4000000059604645;
+                        button{
+                            @include heading_16;
+                        }
                         .brown-text{
                             display: inline-flex;
                             @include heading_30;
@@ -303,6 +306,8 @@ section{
                     border: 1px solid $brown;
                     padding: 20px 0;
                     border-radius: 1000px;
+                    @include heading_20;
+                    color: $brown;
                 }
             }
         }

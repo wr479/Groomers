@@ -32,11 +32,15 @@ export function  popup() {
     $('.call').on('click', function () {
       $('.type-question').removeClass('d-none')
       $('.type-category').addClass('d-none')
+      let popup = $(".popup")
+      popup.attr("data-type","recall")
     })
 
     $('.application').on('click', function () {
       $('.type-question').addClass('d-none')
       $('.type-category').removeClass('d-none')
+      let popup = $(".popup")
+      popup.attr("data-type","makeOrder")
     })
   });
 

@@ -40,15 +40,15 @@
                     </div>
                     <div class="input">
                         <input class="val"   placeholder="Фамилия и Имя" required>
-                        <input class="val" name="phone" type="tel" placeholder="Номер телефона" required>
-                        <input  class="type-question val" placeholder="Тип вопроса" required>
+                        <input class="val numbers-tel" name="phone" type="tel" placeholder="Номер телефона" required>
+                        <input  class="type-question" placeholder="Тип вопроса" required>
                         <div  class="dropdown type-category">
-                            <input type="text" class="selected-category val" required placeholder="Выберите категорию">
-                            <div class="dropdown-list">
+                            <input type="text" for="input-category"  class="selected-category" required placeholder="Выберите категорию">
+                            <label class="dropdown-list" id="input-category">
                               <span data-value="Гигиенический груминг">Гигиенический груминг</span>
                               <span data-value="Профессиональный груминг">Профессиональный груминг</span>
                               <span data-value="Эстетический груминг">Эстетический груминг</span>
-                            </div>
+                            </label>
                         </div>
                         <button class="makeOrder">Отправить</button>
                     </div>
@@ -180,5 +180,7 @@
     </footer>
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <script type="module" src="scripts/app.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
 </body>
 </html>
