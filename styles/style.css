@@ -26,15 +26,6 @@ input {
   outline: none;
 }
 
-input:invalid {
-  border: 2px solid #9A0F0F;
-  color: #9A0F0F;
-}
-
-input::placeholder:invalid {
-  color: #9A0F0F;
-}
-
 input:focus:invalid {
   box-shadow: none;
 }
@@ -1030,6 +1021,9 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   line-height: 120%; /* 24px */
   cursor: pointer;
 }
+.input .error {
+  border: 2px solid #9A0F0F;
+}
 
 footer {
   background-color: #F8F8F8;
@@ -1106,15 +1100,6 @@ body, html {
 
 input {
   outline: none;
-}
-
-input:invalid {
-  border: 2px solid #9A0F0F;
-  color: #9A0F0F;
-}
-
-input::placeholder:invalid {
-  color: #9A0F0F;
 }
 
 input:focus:invalid {

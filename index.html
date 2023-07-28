@@ -41,11 +41,11 @@
                         <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
                     </div>
                     <div class="input">
-                        <input placeholder="Фамилия и Имя" required>
-                        <input name="phone" type="tel" placeholder="Номер телефона" required>
-                        <input class="type-question" placeholder="Тип вопроса" required>
+                        <input class="val"   placeholder="Фамилия и Имя" required>
+                        <input class="val" name="phone" type="tel" placeholder="Номер телефона" required>
+                        <input  class="type-question val" placeholder="Тип вопроса" required>
                         <div  class="dropdown type-category">
-                            <input type="text" class="selected-category" required placeholder="Выберите категорию">
+                            <input type="text" class="selected-category val" required placeholder="Выберите категорию">
                             <div class="dropdown-list">
                               <span data-value="Гигиенический груминг">Гигиенический груминг</span>
                               <span data-value="Профессиональный груминг">Профессиональный груминг</span>
@@ -214,24 +214,24 @@
     <script type="module" src="scripts/app.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
-  <script>
-    $(document).ready(function () {
-      $(".selected-category").on("click", function () {
-        $(".dropdown-list").toggle();
-      });
+    <script>
+        $(document).ready(function () {
+        $(".selected-category").on("click", function () {
+            $(".dropdown-list").toggle();
+        });
 
-      $(".dropdown-list span").on("click", function () {
-        const selectedValue = $(this).attr("data-value");
-        $(".selected-category").val(selectedValue);
-        $(".dropdown-list").hide();
-      });
+        $(".dropdown-list span").on("click", function () {
+            const selectedValue = $(this).attr("data-value");
+            $(".selected-category").val(selectedValue);
+            $(".dropdown-list").hide();
+        });
 
-      $(document).on("click", function (event) {
-        if (!$(event.target).closest(".dropdown").length) {
-          $(".dropdown-list").hide();
-        }
-      });
-    });
-  </script>
+        $(document).on("click", function (event) {
+            if (!$(event.target).closest(".dropdown").length) {
+            $(".dropdown-list").hide();
+            }
+        });
+        });
+    </script>
 </body>
 </html>

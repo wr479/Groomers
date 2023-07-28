@@ -25,8 +25,8 @@
                         </div>
                     </div>
                     <div class="end-content">
-                        <button class="btn white popup-open">Обратный звонок</button>
-                        <button class="btn brown">Оставить заявку</button>
+                        <button class="btn white popup-open call">Обратный звонок</button>
+                        <button class="btn brown popup-open application">Оставить заявку</button>
                     </div>
                 </div>
             </div>
@@ -39,14 +39,20 @@
                         <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
                     </div>
                     <div class="input">
-                        <input placeholder="Фамилия и Имя">
-                        <input placeholder="Номер телефона">
-                        <input placeholder="Тип вопроса">
-                        <button>Отправить</button>
+                        <input class="val"   placeholder="Фамилия и Имя" required>
+                        <input class="val" name="phone" type="tel" placeholder="Номер телефона" required>
+                        <input  class="type-question val" placeholder="Тип вопроса" required>
+                        <div  class="dropdown type-category">
+                            <input type="text" class="selected-category val" required placeholder="Выберите категорию">
+                            <div class="dropdown-list">
+                              <span data-value="Гигиенический груминг">Гигиенический груминг</span>
+                              <span data-value="Профессиональный груминг">Профессиональный груминг</span>
+                              <span data-value="Эстетический груминг">Эстетический груминг</span>
+                            </div>
+                        </div>
+                        <button class="makeOrder">Отправить</button>
                     </div>
                 </div>
-                
-                
             </div>		
         </div>
     </header>
@@ -173,6 +179,6 @@
         </div>
     </footer>
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
-    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/app.js" ></script>
 </body>
 </html>

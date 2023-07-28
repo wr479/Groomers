@@ -110,12 +110,6 @@ body, html{
 input{
     outline: none;
     
-}input:invalid {
-    border:2px solid #9A0F0F;
-    color:#9A0F0F;
-}
-input::placeholder:invalid{
-    color:#9A0F0F;
 }
   
   input:focus:invalid {
