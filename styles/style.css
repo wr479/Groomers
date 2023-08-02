@@ -1,6 +1,20 @@
 :root {
   --container: 1800px;
-  --content: 872px ;
+}
+@media (max-width: 1910px) {
+  :root {
+    --container:1600px;
+  }
+}
+@media (max-width: 1605px) {
+  :root {
+    --container:1400px;
+  }
+}
+@media (max-width: 1423px) {
+  :root {
+    --container:1200px ;
+  }
 }
 
 * {
@@ -167,7 +181,7 @@ section .gryming-section .gryming-container .help-gryming-text {
   gap: 94px;
 }
 section .gryming-section .gryming-container .help-gryming-text .parara {
-  width: 991px;
+  max-width: 991px;
 }
 section .gryming-section .gryming-container .help-gryming-text .h1-text {
   display: block;
@@ -176,6 +190,16 @@ section .gryming-section .gryming-container .help-gryming-text .h1-text {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: -1.56px;
+}
+@media (max-width: 1605px) {
+  section .gryming-section .gryming-container .help-gryming-text .h1-text {
+    font-size: 58px;
+  }
+}
+@media (max-width: 1423px) {
+  section .gryming-section .gryming-container .help-gryming-text .h1-text {
+    font-size: 48px;
+  }
 }
 section .gryming-section .gryming-container .help-gryming-text .h1-text .help {
   color: rgba(0, 0, 0, 0.4);
@@ -335,7 +359,7 @@ section .types-grooming-section .types-grooming-container .content .h1-text .gre
 }
 section .types-grooming-section .types-grooming-container .content .types-grooming:hover {
   opacity: 1;
-  transition: opacity 1.5s;
+  transition: opacity 0.3s;
 }
 section .stages-section {
   background-color: #F8F8F8;
@@ -367,6 +391,11 @@ section .stages-section .stages-container .grids .p-text {
   line-height: 120%; /* 24px */
   display: block;
 }
+@media (max-width: 1423px) {
+  section .stages-section .stages-container .grids .p-text {
+    font-size: 14px;
+  }
+}
 section .stages-section .stages-container .grids .two {
   border-radius: 12px 64px 12px 12px;
 }
@@ -395,7 +424,7 @@ section .stages-section .stages-container .grids .ped-one {
   background-color: rgb(154, 80, 15);
   border-radius: 12px 64px 12px 12px;
   padding: 40px;
-  width: 890px;
+  max-width: 890px;
   flex-wrap: wrap;
   align-content: space-between;
   flex-direction: column;
@@ -414,11 +443,17 @@ section .stages-section .stages-container .grids .ped-one .p-text {
   letter-spacing: -0.6px;
   color: #ffffff;
   display: block;
-  width: 719px;
+  max-width: 719px;
 }
 section .stages-section .stages-container .grids .ped-one .end-one {
   display: flex;
-  gap: 566px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+@media (max-width: 1910px) {
+  section .stages-section .stages-container .grids .ped-one .end-one .end-one {
+    gap: 464px;
+  }
 }
 section .stages-section .stages-container .grids .ped-one .end-one .h1-text {
   font-size: 78px;
@@ -454,6 +489,11 @@ section .banner-section .banner-container .banner-text .h1-text {
   line-height: 110%;
   letter-spacing: -1.56px;
   color: rgb(154, 80, 15);
+}
+@media (max-width: 1605px) {
+  section .banner-section .banner-container .banner-text .h1-text {
+    font-size: 58px;
+  }
 }
 section .banner-section .banner-container .banner-text .button-procedoor {
   width: 100%;
@@ -1091,7 +1131,21 @@ footer .footer-section .footer-container .footer-end .politic span {
 
 :root {
   --container: 1800px;
-  --content: 872px ;
+}
+@media (max-width: 1910px) {
+  :root {
+    --container:1600px;
+  }
+}
+@media (max-width: 1605px) {
+  :root {
+    --container:1400px;
+  }
+}
+@media (max-width: 1423px) {
+  :root {
+    --container:1200px ;
+  }
 }
 
 * {

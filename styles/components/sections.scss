@@ -53,11 +53,17 @@ section{
                 display: flex;
                 gap: 94px;
                 .parara{
-                    width: 991px;
+                    max-width: 991px;
                 }
                 .h1-text{
                     display: block;
                     @include heading_78;
+                    @include small-laptop{
+                        font-size: 58px;
+                    }
+                    @include tabletHorizontal{
+                        font-size: 48px;
+                    }
                     .help{
                         color: $grey;
                     }
@@ -194,7 +200,7 @@ section{
                 }
                     .types-grooming:hover{
                         opacity: 1;
-                        transition: opacity 1.5s;
+                        transition: opacity .3s;
                     }
                     
                
@@ -223,6 +229,9 @@ section{
                 .p-text{
                     @include heading_20;
                     display: block;
+                    @include tabletHorizontal{
+                        font-size: 14px;
+                    }
                 }
                 .two{
                     border-radius: 12px 64px 12px 12px;
@@ -252,7 +261,7 @@ section{
                     background-color: $brown;
                     border-radius: 12px 64px 12px 12px;
                     @include padding-desktop;
-                    width: 890px;
+                    max-width: 890px;
                     flex-wrap: wrap;
                     align-content: space-between;
                     flex-direction: column;
@@ -264,11 +273,17 @@ section{
                             @include heading_30;
                             color: $white;
                             display: block;
-                            width: 719px;
+                            max-width: 719px;
                         }
                         .end-one{
                             display: flex;
-                            gap: 566px;
+                            justify-content: space-between;
+                            max-width:100%;
+                            @include laptop{
+                               .end-one {
+                                    gap: 464px;
+                                }
+                            }
                             .h1-text{
                                 @include heading_78;
                                 color: $grey-blue;
@@ -299,6 +314,9 @@ section{
                     display: block;
                     @include heading_78;
                     color: $brown;
+                    @include small-laptop{
+                        font-size: 58px;
+                    }
                 }
                 .button-procedoor{
                     width: 100%;

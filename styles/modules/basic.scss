@@ -3,8 +3,18 @@
 // переменные
 :root{
     --container: 1800px;
-    --content: 872px
-}
+    // --content: 872px;
+    @include laptop{
+        --container:1600px;
+    };
+
+    @include small-laptop{
+        --container:1400px;
+    };
+    @include tabletHorizontal{
+        --container:1200px
+    }
+};
 
 $white:#ffffff;
 $black:rgba(0, 0, 0, 1);
