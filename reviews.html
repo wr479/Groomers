@@ -18,15 +18,20 @@
                     <div class="start-content">
                         <a href="index.html"><img src="images/logos/logo.svg"></a>
                         <div class="text">
-                            <a href="index.html"><span>Главная</span></a>
+                            <a href="index.html" ><span class="black-text">Главная</span></a>
                             <a href="about.html"><span>О нас</span></a>
                             <a href="price.html"><span>Прайс лист</span></a>
-                            <a href="reviews.html"><span class="black-text">Отзывы</span></a>
+                            <a href="reviews.html"><span>Отзывы</span></a>
                         </div>
                     </div>
                     <div class="end-content">
                         <button class="btn white popup-open call">Обратный звонок</button>
                         <button class="btn brown popup-open application">Оставить заявку</button>
+                    </div>
+                    <div class="end-content-mobile">
+                        <button class="btn white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path d="M2.5 10.5H17.5M2.5 5.5H17.5M7.5 15.5H17.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg> <span>Меню</span></button>
                     </div>
                 </div>
             </div>
@@ -39,11 +44,11 @@
                         <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
                     </div>
                     <div class="input">
-                        <input class="val"   placeholder="Фамилия и Имя" required>
-                        <input class="val numbers-tel" name="phone" type="tel" placeholder="Номер телефона" required>
-                        <input  class="type-question" placeholder="Тип вопроса" required>
-                        <div  class="dropdown type-category">
-                            <input type="text" for="input-category"  class="selected-category" required placeholder="Выберите категорию">
+                        <input class="val name-fename" data-inputType="name"   placeholder="Фамилия и Имя" required>
+                        <input class="val numbers-tel"  data-inputType="phone " name="phone" type="tel" placeholder="Номер телефона" required>
+                        <input class="val type-question" data-inputType="type-question" placeholder="Тип вопроса" required>
+                        <div class="dropdown type-category">
+                            <input type="text" for="input-category"  class=" val selected-category" data-inputType="сategory" required placeholder="Выберите категорию">
                             <label class="dropdown-list" id="input-category">
                               <span data-value="Гигиенический груминг">Гигиенический груминг</span>
                               <span data-value="Профессиональный груминг">Профессиональный груминг</span>
@@ -175,9 +180,10 @@
     <footer>
         <div class="footer-section">
             <div class="footer-container container">
-                <img src="images/footer/groomers.svg">
+                <img class="d-block-mobile" src="images/footer/vector.svg">
+                <img class="d-none" src="images/footer/groomers.svg">
                 <div class="footer-end">
-                    <img src="images/footer/website-studio.svg">
+                    <a href="https://studiya-saitov.com/"><img src="images/footer/website-studio.svg"></a>
                     <div class="end">
                         <div class="all-def">
                             <span class="def">©️ GROOMERS 2021 - 2023.</span>
