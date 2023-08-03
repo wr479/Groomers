@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -29,6 +29,11 @@
                     <div class="end-content">
                         <button class="btn white popup-open call">Обратный звонок</button>
                         <button class="btn brown popup-open application">Оставить заявку</button>
+                    </div>
+                    <div class="end-content-mobile">
+                        <button class="btn white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path d="M2.5 10.5H17.5M2.5 5.5H17.5M7.5 15.5H17.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg> <span>Меню</span></button>
                     </div>
                 </div>
             </div>
@@ -66,7 +71,7 @@
                         <span class="h1-text">Здоровой собаке<br>нужен здоровый уход</span>
                         <div class="text">
                             <span class="p-text">Груминг собак – очень важное мероприятие<br>для любой собаки, независимо от породы,<br>размера и возраста. </span>
-                            <span class="p-text">Регулярные процедуры по уходу за шерстью,<br>когтями, зубами, глазами и ушами обеспечивают<br>здоровье собаки на долгие годы.</span>
+                            <span class="p-text d-none">Регулярные процедуры по уходу за шерстью,<br>когтями, зубами, глазами и ушами обеспечивают<br>здоровье собаки на долгие годы.</span>
                         </div>
                     </div>
                     
@@ -108,25 +113,34 @@
                             <img id="image" src="images/animate-image/ced-dog.png" alt="Изображение">
                             <div class="parems">
                                 <div class="types-grooming" data-image="images/animate-image/ced-dog.png">
-                                    <span class="brown-text">01.</span>
+                                    <div class="mobile">
+                                        <span class="brown-text">01.</span>
+                                        <span class="h1-text d-block-mobile">Гигиенический</span>
+                                     </div>
                                     <div class="text">
-                                         <span class="h1-text">Гигиенический </span>
+                                         <span class="h1-text d-none-mobile">Гигиенический </span>
                                          <span class="p-text">Домашние процедуры по уходу, направленные на поддержание гигиены животного.</span>
                                      </div> 
                                      <a href="price.html"><button class="btn brown">Подробнее</button></a>
                                  </div>
                                  <div class="types-grooming" data-image="images/animate-image/funny-dog.png">
-                                     <span class="brown-text">02.</span>
+                                     <div class="mobile">
+                                        <span class="brown-text">02.</span>
+                                        <span class="h1-text d-block-mobile">Профессиональный</span>
+                                     </div>
                                      <div class="text">
-                                         <span class="h1-text">Профессиональный</span>
-                                         <span class="p-text">Выполняется в специализированных салонах. Включает процедуры по уходу и модельные стрижки.</span>
+                                         <span class="h1-text d-none-mobile">Профессиональный</span>
+                                         <span class="p-text ">Выполняется в специализированных салонах. Включает процедуры по уходу и модельные стрижки.</span>
                                       </div> 
                                       <a href="price.html"><button class="btn brown">Подробнее</button></a>
                                   </div>
                                   <div class="types-grooming" data-image="images/animate-image/photo-dog.png">
-                                     <span class="brown-text">03.</span>
+                                     <div class="mobile">
+                                        <span class="brown-text">03.</span>
+                                        <span class="h1-text d-block-mobile">Эстетический</span>
+                                     </div>
                                      <div class="text">
-                                         <span class="h1-text">Эстетический</span>
+                                         <span class="h1-text d-none-mobile">Эстетический</span>
                                          <span class="p-text">Фигурная стрижка шерсти, отбеливание зубов, татуаж и другие процедуры, выполняемые с целью подготовки животного к выставкам и фотосессиям.</span>
                                       </div> 
                                       <a href="price.html"><button class="btn brown">Подробнее</button></a>
@@ -146,7 +160,7 @@
                 <div class="stages-container container">
                     <img src="images/gallery/groomer.svg">
                     <div class="grids">
-                        <div class="ped-one">
+                        <div   class=" wow slideInUp ped-one"   data-wow-duration="1s"  data-wow-delay="0s">
                                 <span class="p-text">Шерсть животного тщательно расчесывается, удаляются колтуны и старые волоски. Используются специальные щетки и расчески.</span>
                                 <div class="end-one">
                                     <span class="h1-text">Шаг 1</span>
@@ -155,19 +169,19 @@
                                 
                             
                         </div>
-                        <div class="two">
+                        <div class="two wow slideInUp"data-wow-duration="1s"  data-wow-delay="0s">
                             <span class="h1-text">Шаг 2</span>
                             <span class="p-text">Модельная стрижка шерсти и гигиеническая обработка глаз.</span>
                         </div>
-                        <div class="three">
+                        <div class="three wow slideInUp"data-wow-duration="1s"  data-wow-delay="0s">
                             <span class="h1-text">Шаг 3</span>
                             <span class="p-text">Чистка ушей и зубов, cтрижка когтей с использованием когтерезки.</span>
                         </div>
-                        <div class="four">
+                        <div class="four wow slideInUp"data-wow-duration="1s"  data-wow-delay="0s">
                             <span class="h1-text">Шаг 4</span>
                             <span class="p-text">Водные процедуры. Шерсть и кожа животного тщательно вымывается с использованием специальных шампуней и других средств для ухода за животными.</span>
                         </div>
-                        <div class="five">
+                        <div class="five wow slideInUp"data-wow-duration="1s"  data-wow-delay="0s">
                             <span class="h1-text">Шаг 5</span>
                             <span class="p-text">Обтирание шерсти полотенцем и просушивание феном.@@</span>
                         </div>
@@ -190,9 +204,10 @@
     <footer>
         <div class="footer-section">
             <div class="footer-container container">
-                <img src="images/footer/groomers.svg">
+                <img class="d-block-mobile" src="images/footer/vector.svg">
+                <img class="d-none" src="images/footer/groomers.svg">
                 <div class="footer-end">
-                    <img src="images/footer/website-studio.svg">
+                    <a href="https://studiya-saitov.com/"><img src="images/footer/website-studio.svg"></a>
                     <div class="end">
                         <div class="all-def">
                             <span class="def">©️ GROOMERS 2021 - 2023.</span>
@@ -210,6 +225,19 @@
         </div>
     </footer>
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scripts/modules/wow.min.js"></script>
+    <script>
+    wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       50,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
     <script type="module" src="scripts/app.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
