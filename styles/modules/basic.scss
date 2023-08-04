@@ -22,7 +22,10 @@
     };
     @include small_mobile{
         --container:345px;
-    }
+    };
+    @include small_mega_mobile{
+        --container:335px
+    };
 };
 
 $white:#ffffff;

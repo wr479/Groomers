@@ -48,6 +48,12 @@ header{
                         }
                     }
                 }
+                .end-content-mobile{
+                    display: none;
+                    @include tabletVertical{
+                        display: block;
+                    }
+                }
                 .end-content{
                     display: flex;
                     gap: 10px;

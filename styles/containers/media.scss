@@ -37,4 +37,8 @@
 @mixin small_mobile(){
   @media (max-width: $breakpoint_small_mobile){
     @content
-}}
+}};
+@mixin small_mega_mobile(){
+  @media (max-width: $breakpoint_small_mega_mobile){
+    @content
+}};

@@ -37,10 +37,12 @@ section{
                     .p-text{
                         @include heading_20;
                         color: $white;
+                        display: block;
                         @include mobile{
                             @include heading_16;
                         }
                         .d-none{
+                            display: block;
                             @include mobile{
                                  display: none;
                             }
@@ -172,12 +174,18 @@ section{
     .types-grooming-section{
         @include padding-section;
         background-color: $white-blue;
+        @include mobile{
+            padding: 20px 0;
+        }
         .types-grooming-container{
             background-color: $white;
             border-radius: 64px;
             margin-left: 20px;
             margin-right: 20px;
             padding: 120px 40px;
+            @include mobile{
+                padding: 20px 0;
+            }
             img {
                 transition: opacity 1.5s;
                 position: sticky;
@@ -233,6 +241,9 @@ section{
                         }
                         button{
                             @include heading_16;
+                            @include mobile{
+                                width: 335px;
+                            }
                         }
                         .brown-text{
                             display: inline-flex;
@@ -259,9 +270,12 @@ section{
                                 display: inline-flex;
                                 @include heading_20;
                                 width: 470px;
-                                @include small-mobile{
+                                @include small_mobile{
                                     font-size: 16px;
                                     width: 335px;
+                                }
+                                @include small_mega_mobile{
+                                    width: 287px;
                                 }
                             }
                         }
@@ -299,7 +313,7 @@ section{
                         max-width: 471px;
                         
                     }
-                    @include small-mobile{
+                    @include small_mobile{
                         width: 335px;
                         font-size: 30px;
                     }
@@ -392,6 +406,7 @@ section{
                     justify-content: space-between;
                     @include mobile{
                         gap: 55px;
+                        padding: 30px;
                     }
                 }
                 .ped-one{
@@ -409,7 +424,9 @@ section{
                     @include background;
                     background-image: url(../../images/animate-image/background/cat-bg.png);
                     @include mobile{
-                        gap: 55px
+                        gap: 55px;
+                        padding: 30px
+                        
                     }
                         .p-text{
                             @include heading_30;
@@ -473,6 +490,10 @@ section{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @include mobile{
+                    gap: 40px;
+                    padding: 30px;
+                }
                 .h1-text{
                     display: block;
                     @include heading_78;
@@ -483,6 +504,9 @@ section{
                     @include tabletVertical{
                         font-size: 36px;
                     }
+                    @include mobile{
+                        font-size: 30px;
+                    }
                 }
                 .button-procedoor{
                     width: 100%;
@@ -492,6 +516,12 @@ section{
                     border-radius: 1000px;
                     @include heading_20;
                     color: $brown;
+                    @include mobile{
+                        color: $white;
+                        background-color: $brown;
+                        padding: 14px 0;
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -502,6 +532,24 @@ section{
         .hero-about-container{
             padding-bottom:80px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+            @include mobile{
+                padding-bottom:0 ;
+            }
+            .d-none-img{
+                display: none;
+                @include mobile{
+                    display: block;
+                }
+            }
+            .d-block{
+                display: block;
+                @include mobile {
+                    display: none;
+                }
+            }
+            img{
+                max-width: 100%;
+            }
             
         }
     }
@@ -510,22 +558,57 @@ section{
         .groomers-content-container{
             border-bottom: 1px solid rgba(0, 0, 0, 0.10);
             @include padding-section;
+            @include mobile{
+                padding-top: 100px;
+            }
             .h1-text{
                 display: block;
                 @include heading_48;
-                width: 1106px;
+                max-width: 1106px;
+                @include tabletVertical{
+                    font-size: 36px;
+                }
+                @include mobile{
+                    font-size: 30px;
+                }
             }
             .content{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                @include mobile{
+                    gap: 60px;
+                    margin-top: 40px;
+                }
+                .d-block{
+                    display: block;
+                    @include mobile{
+                        display: none;
+                    }
+                }
+                .d-none-img{
+                    display: none;
+                    @include mobile{
+                        display: block;
+                    }
+                }
+                img{
+                    max-width: 100%
+                    
+                }
                 .p-text{
                     @include heading_20;
                     display: block;
                     margin-right: 234px;
-                    width: 452px;
+                    max-width: 452px;
                     margin-top: 60;
                     margin-bottom: 80px;
+                    @include mobile{
+                        display: flex;
+                        margin: 0;
+                        text-align: left;
+                        font-size: 16px;
+                    }
                 }
             }
            
@@ -536,11 +619,16 @@ section{
         .command-container{
             padding: 200px 0;
             text-align: center;
+            @include mobile{
+                padding: 40px 0 ;
+            }
             .h1-text{
                 display: inline-block;
                 @include heading_96;
-                width: 1358px;
-                
+                max-width: 1358px;
+                @include tabletVertical{
+                    font-size: 48px;
+                }
                 .brown-text{
                     color: $brown;
                 }
@@ -549,16 +637,25 @@ section{
                 margin-top: 120px;
                 display: flex;
                 justify-content: space-between;
+                
                 .p-text{
                     display: block;
                     @include heading_20;
                     color: rgba(0, 0, 0, 0.40);
-                    text-align: left;
+                    text-align: left
+                }
+                .command{
+                    @include mobile{
+                         display: none;
+                    }
                 }
                 .cards{
                     display: flex;
                     justify-content: space-between;
                     gap: 20px;
+                    @include mobile{
+                        flex-direction: column
+                    }
                     .card{
                         @include padding-desktop;
                         background-color: $white;
@@ -569,6 +666,7 @@ section{
                         gap: 120px;
                         border-radius: 12px 64px 12px 12px;
                         border: 1px solid  rgba(0, 0, 0, 0.10);
+                        max-width: 577px;
                         .start{
                             display: flex;
                             flex-direction: column;
@@ -591,7 +689,7 @@ section{
                             .history{
                                 display: block;
                                 @include heading_20;
-                                width: 495px;
+                                max-width: 495px;
                             }
                         }
                     }
@@ -612,25 +710,44 @@ section{
             .h1-text{
                 display: block;
                 @include heading_96;
-                width: 1191px;
+                max-width: 1191px;
+                @include tabletHorizontal{
+                    font-size: 76px;
+                }
+                @include tabletVertical{
+                    font-size: 30px;
+                }
                 .brown-text{
                     color: $brown;
                 }
 
             }
             button{
-                width: 890px;
+                max-width: 890px;
                 @include heading_20;
                 padding: 20px 0;
                 background: none;
                 border-radius: 1000px;
                 border: 1px solid rgba(0, 0, 0, 0.10);
                 cursor: pointer;
+                @include mobile{
+                    
+                }
             }
             .cards{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 20px;
+                @include laptop{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                @include tabletHorizontal{
+                    grid-template-columns: 1fr 1fr ;
+                }
+                @include tabletVertical{
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
                 .card{
                     border-radius:64px 12px  12px 12px;
                     border: 1px solid rgba(0, 0, 0, 0.10);
@@ -640,6 +757,9 @@ section{
                     display: flex;
                     flex-direction: column;
                     gap: 80px;
+                    @include tabletVertical{
+                        padding: 30px;
+                    }
                     img{
                         width: 90px;
                         height: 90px;
@@ -666,8 +786,12 @@ section{
                     .end{
                         .history{
                             display: block;
-                            width: 354px;
+                            max-width: 354px;
                             @include heading_20;
+                            @include tabletVertical{
+                                font-size: 16px;
+
+                            }
                         }
                     }
                 }
@@ -691,11 +815,16 @@ section{
             align-items: center;
             img{
                 margin-right: 480px;
+                max-width: 100%;
+                @include mobile{
+                    margin: 0;
+                    align-items: flex-start;
+                }
             }
             .content{
                 border-radius: 12px 64px 12px 12px;
                 border: 1px solid rgba(0, 0, 0, 0.10);
-                width: 1068px;
+                max-width: 1068px;
                 margin-right: 0;
                 @include padding-desktop;
                 background-color: $white;
@@ -704,20 +833,39 @@ section{
                 justify-content: space-between;
                 align-items: stretch;
                 gap: 120px;
+                @include mobile{
+                    padding: 30px;
+                }
                 .h1-text{
                     display: block;
                     @include heading_78;
-                    width: 913px;
+                    max-width: 913px;
+                    @include tabletVertical{
+                        font-size: 48px;
+                    }
+                    @include mobile{
+                        font-size: 30px;
+                    }
                 }
                 .end{
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-end;
+                    @include tabletVertical{
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 40px;
+                    }
+                    
                     .p-text{
                         margin-top: 57px;
                         display: block;
                         @include heading_30;
                         color: rgba(0, 0, 0, 0.40);
+                        @include mobile{
+                            margin: 0;
+                            font-size: 16px;
+                        }
                     }
                     .buttom{
                         width: 484px;
@@ -727,6 +875,9 @@ section{
                         color: $white;
                         border: none;
                         border-radius: 1000px;
+                        @include mobile{
+                            width: 335px;
+                        }
                     }
                 }
             }
@@ -743,7 +894,13 @@ section{
             .h1-text{
                 @include heading_48;
                 display: block;
-                width: 1106px;
+                max-width: 1106px;
+                @include tabletVertical{
+                    font-size: 36px ;
+                }
+                @include mobile{
+                    font-size: 20px;
+                }
                 .brown-text{
                     color: $brown;
                 }
@@ -756,6 +913,9 @@ section{
                     position: -webkit-sticky;
                     position: sticky;
                     top: 100px;
+                    @include tabletHorizontal{
+                        display: none;
+                    }
                 }
                 .padding-top{
                     border-top: 1px solid rgba(0, 0, 0, 0.10);;
@@ -767,10 +927,14 @@ section{
                 .price{
                     display: flex;
                     justify-content: space-between;
-                    width: 1170px;
+                    max-width: 1170px;
                     border-bottom: 1px solid rgba(0, 0, 0, 0.10);
                     padding: 40px 0 ;
                     margin-right: 60px;
+                    @include tabletVertical{
+                        flex-direction: column;
+                        gap: 60px;
+                    }
                     .brown-text{
                         @include heading_30;
                         color: $brown;
@@ -790,11 +954,17 @@ section{
                                 display: inline-flex;
                                 @include heading_30;
                                 max-width: 401px;
+                                @include mobile{
+                                    font-size: 20px
+                                }
                             }
                             .p-text{
                                 @include heading_20;
                                 display: block;
                                 max-width: 470px;
+                                @include mobile{
+                                    font-size: 16px;
+                                }
                             }
                         }
                         ul{
@@ -803,11 +973,17 @@ section{
                             padding: 0;
                             margin: 0;
                             text-align: left;
-                            
+                            @include tabletVertical{
+                                grid-template-columns: 1fr ;
+                                gap: 20px;
+                            }
                             li{
                                 color: rgba(0, 0, 0, 0.40);
                                 max-width: 172px;
                                 margin-left: 20px;
+                                @include mobile{
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
@@ -818,8 +994,16 @@ section{
                         width: 234px;
                         text-align: right;
                         align-items: flex-end;
+                        @include tabletVertical{
+                            text-align: left;
+                            align-items: flex-start;
+                            gap: 40px;
+                        }
                         button{
                             font-size: 16px;
+                            @include tabletVertical{
+                                width: 335px;
+                            }
                         }
                         .end{
                             display: flex;
@@ -830,6 +1014,12 @@ section{
                                 display: block;
                                 @include heading_48;
                                 color: $brown;
+                                @include small-laptop{
+                                    font-size: 36px;
+                                }
+                                @include mobile{
+                                    font-size: 30px;
+                                }
                             }
                             .grey-text{
                                 opacity: 0.20000000298023224;
