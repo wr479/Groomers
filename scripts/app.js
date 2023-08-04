@@ -4,7 +4,10 @@ import { popup } from "./modules/popup.js";
 import { validation } from "./modules/valisatoin.js";
 import { utils } from "./modules/utils.js";
 import { menu } from "./modules/menu.js";
+import { price } from "./modules/price.js";
 
+
+price()
 menu()
 animation_dog()
 popup()

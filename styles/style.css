@@ -208,11 +208,11 @@ section .hero-section .hero-container .content-text .text .p-text {
     line-height: 120%; /* 19.2px */
   }
 }
-section .hero-section .hero-container .content-text .text .p-text .d-none {
+section .hero-section .hero-container .content-text .text .d-none-text {
   display: block;
 }
-@media (max-width: 550px) {
-  section .hero-section .hero-container .content-text .text .p-text .d-none {
+@media (max-width: 1024px) {
+  section .hero-section .hero-container .content-text .text .d-none-text {
     display: none;
   }
 }

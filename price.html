@@ -48,7 +48,7 @@
                         <input class="val numbers-tel"  data-inputType="phone " name="phone" type="tel" placeholder="Номер телефона" required>
                         <input class="val type-question" data-inputType="type-question" placeholder="Тип вопроса" required>
                         <div class="dropdown type-category">
-                            <input type="text" for="input-category"  class=" val selected-category" data-inputType="сategory" required placeholder="Выберите категорию">
+                            <input id="ctr" type="text" for="input-category"  class=" val selected-category" data-inputType="сategory" required placeholder="Выберите категорию">
                             <label class="dropdown-list" id="input-category">
                               <span data-value="Гигиенический груминг">Гигиенический груминг</span>
                               <span data-value="Профессиональный груминг">Профессиональный груминг</span>
@@ -125,7 +125,7 @@
                                             <span class="brown-text-h1">от 5 000 ₽</span>
                                             <span class="grey-text">*Окончательная цена зависит от характеристик животного</span>
                                         </div>
-                                        <button class="btn brown">Выбрать услугу</button>
+                                        <button class="btn brown price-button" onclick="insert('Гигиенический груминг')">Выбрать услугу</button>
                                     </div>
                                 </div>
                                 <div class=" types-grooming price" data-image="images/animate-image/funny-dog.png">                                    
@@ -224,5 +224,6 @@
     <script type="module" src="scripts/app.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
+   
 </body>
 </html>

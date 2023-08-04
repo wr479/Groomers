@@ -41,11 +41,12 @@ section{
                         @include mobile{
                             @include heading_16;
                         }
-                        .d-none{
-                            display: block;
-                            @include mobile{
-                                 display: none;
-                            }
+                        
+                    }
+                    .d-none-text{
+                        display: block;
+                        @include tabletVertical{
+                             display: none;
                         }
                     }
             }
