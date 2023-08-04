@@ -6,7 +6,8 @@ header{
     z-index: 999;
     .header-section{
         .header-container{
-                
+            position: relative;
+                z-index: 99;
             .content-main{
                 display: flex;
                 align-items: center;

@@ -1491,6 +1491,12 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   width: 1068px;
   padding: 40px;
 }
+@media (max-width: 1024px) {
+  .popup {
+    width: 100%;
+    left: 146%;
+  }
+}
 
 .panel {
   display: flex;
@@ -1517,6 +1523,11 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  .input {
+    grid-template-columns: 1fr;
+  }
 }
 .input input {
   border-radius: 1000px;
@@ -1592,11 +1603,22 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   line-height: 110%;
   letter-spacing: -1.56px;
 }
+@media (max-width: 1024px) {
+  .back-call .h1-text {
+    font-size: 30px;
+    width: 174px;
+  }
+}
 
 .input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 1024px) {
+  .input {
+    grid-template-columns: 1fr;
+  }
 }
 .input input {
   border-radius: 1000px;
@@ -1607,6 +1629,11 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 24px */
+}
+@media (max-width: 1024px) {
+  .input input {
+    width: 270px;
+  }
 }
 .input button {
   color: #ffffff;
@@ -1619,6 +1646,12 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   font-weight: 400;
   line-height: 120%; /* 24px */
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .input button {
+    max-width: 269px;
+    padding: 20px 0;
+  }
 }
 .input .error {
   border: 2px solid #9A0F0F;
@@ -1809,6 +1842,10 @@ header {
   top: 20px;
   z-index: 999;
 }
+header .header-section .header-container {
+  position: relative;
+  z-index: 99;
+}
 header .header-section .header-container .content-main {
   display: flex;
   align-items: center;
@@ -1879,6 +1916,82 @@ header .header-section .header-container .content-main .end-content button {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
+}
+
+.d-none-menu {
+  display: none;
+}
+
+.d-none-block {
+  display: block;
+}
+
+.menu {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/animate-image/background/dog.png);
+  width: 100%;
+  height: 100vh;
+  top: -20px;
+  position: absolute;
+}
+.menu .menu-sub {
+  margin-top: 30%;
+}
+.menu .menu-sub a, .menu .menu-sub span {
+  color: #000;
+  text-decoration: none;
+}
+.menu .menu-sub .end-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  width: 340px;
+}
+.menu .menu-sub .end-content .white {
+  background-color: #ffffff;
+}
+.menu .menu-sub .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.menu .menu-sub .cards .one-card {
+  border-radius: 32px 6px 6px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu .menu-sub .cards .two-card {
+  border-radius: 6px 32px 6px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu .menu-sub .cards .three-card {
+  border-radius: 6px 6px 6px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu .menu-sub .cards .four-card {
+  border-radius: 6px 6px 32px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu .menu-sub .cards .card {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  position: relative;
+}
+.menu .menu-sub .cards .card .h1-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  display: block;
+}
+.menu .menu-sub .cards .card svg {
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -26,7 +26,10 @@
 	opacity: 1;	
     width: 1068px;
     padding: 40px;
-    
+    @include  tabletVertical{
+        width: 100%;
+        left: 146%;
+    }
 }
 .panel{
     display: flex;
@@ -47,6 +50,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
+    @include tabletVertical{
+        grid-template-columns: 1fr;
+    }
     input{
         border-radius: 1000px;
         border: 1px solid rgba(0, 0, 0, 0.10);
@@ -106,18 +112,28 @@
     justify-content: space-between;
     .h1-text{
         @include heading_78;
+        @include tabletVertical{
+            font-size: 30px;
+            width: 174px;
+        }
     }
 }
 .input{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
+    @include tabletVertical{
+        grid-template-columns: 1fr;
+    }
     input{
         border-radius: 1000px;
         border: 1px solid rgba(0, 0, 0, 0.10);
         width: 484px;
         padding: 20px 40px;
         @include heading_20;
+        @include tabletVertical{
+            width: 270px;
+        }
     }
     button{
         color: $white;
@@ -127,6 +143,10 @@
         border: none;
         @include heading_20;
         cursor: pointer;
+        @include tabletVertical{
+            max-width: 269px;
+            padding: 20px 0;
+        }
     }
     .error{
         border: 2px solid #9A0F0F; 
