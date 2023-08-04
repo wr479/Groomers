@@ -324,6 +324,10 @@ section{
                 .d-block-mobile{
                     max-width: 200px;
                     border: none;
+                    display: none;
+                    @include tabletVertical{
+                        display: block;
+                    }
                     @include small-mobile{
                         font-size: 20px;
                     }

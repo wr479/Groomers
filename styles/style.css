@@ -32,9 +32,9 @@
     --container:345px;
   }
 }
-@media (max-width: 345px) {
+@media (max-width: 350px) {
   :root {
-    --container:335px ;
+    --container:345px ;
   }
 }
 
@@ -508,7 +508,7 @@ section .types-grooming-section .types-grooming-container .content .cards .types
     width: 335px;
   }
 }
-@media (max-width: 345px) {
+@media (max-width: 350px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .p-text {
     width: 287px;
   }
@@ -568,6 +568,12 @@ section .types-grooming-section .types-grooming-container .content .h1-text .gre
 section .types-grooming-section .types-grooming-container .content .d-block-mobile {
   max-width: 200px;
   border: none;
+  display: none;
+}
+@media (max-width: 1024px) {
+  section .types-grooming-section .types-grooming-container .content .d-block-mobile {
+    display: block;
+  }
 }
 @media (max-width: 425px) {
   section .types-grooming-section .types-grooming-container .content .d-block-mobile {
@@ -1799,9 +1805,9 @@ footer .footer-section .footer-container .footer-end .politic span {
     --container:345px;
   }
 }
-@media (max-width: 345px) {
+@media (max-width: 350px) {
   :root {
-    --container:335px ;
+    --container:345px ;
   }
 }
 

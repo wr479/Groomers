@@ -13,9 +13,6 @@
         @content
       }
 };
-  
-    
-
 @mixin small_laptop(){
   @media (max-width: $breakpoint_small_laptop){
     @content
