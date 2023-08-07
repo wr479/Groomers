@@ -925,6 +925,7 @@ section .groomers-content-section .groomers-content-container {
 @media (max-width: 550px) {
   section .groomers-content-section .groomers-content-container {
     padding-top: 100px;
+    padding-bottom: 80px;
   }
 }
 section .groomers-content-section .groomers-content-container .h1-text {
@@ -1005,7 +1006,13 @@ section .command-section .command-container {
 }
 @media (max-width: 550px) {
   section .command-section .command-container {
-    padding: 40px 0;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 550px) {
+  section .command-section .command-container {
+    padding-bottom: 0px;
+    margin-bottom: -60px;
   }
 }
 section .command-section .command-container .h1-text {
@@ -1035,6 +1042,11 @@ section .command-section .command-container .contant-card {
   margin-top: 120px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card {
+    margin-top: 60px;
+  }
 }
 section .command-section .command-container .contant-card .p-text {
   display: block;
@@ -1147,6 +1159,11 @@ section .reviews-section .reviews-container {
   text-align: center;
   gap: 95px;
 }
+@media (max-width: 550px) {
+  section .reviews-section .reviews-container {
+    gap: 20px;
+  }
+}
 section .reviews-section .reviews-container .h1-text {
   display: block;
   font-size: 96px;
@@ -1169,6 +1186,7 @@ section .reviews-section .reviews-container .h1-text {
 @media (max-width: 550px) {
   section .reviews-section .reviews-container .h1-text {
     width: 320px;
+    padding-bottom: 40px;
   }
 }
 section .reviews-section .reviews-container .h1-text .brown-text {
@@ -1397,10 +1415,20 @@ section .hero-block-section {
   padding-top: 200px;
   padding-bottom: 0px;
 }
+@media (max-width: 550px) {
+  section .hero-block-section {
+    padding-top: 160px;
+  }
+}
 section .hero-block-section .hero-block-container {
   display: flex;
   flex-direction: column;
   gap: 120px;
+}
+@media (max-width: 550px) {
+  section .hero-block-section .hero-block-container {
+    gap: 60px;
+  }
 }
 section .hero-block-section .hero-block-container .h1-text {
   font-size: 48px;
@@ -1462,6 +1490,11 @@ section .hero-block-section .hero-block-container .prices .price {
     margin-right: 0;
   }
 }
+@media (max-width: 550px) {
+  section .hero-block-section .hero-block-container .prices .price {
+    padding: 60px 0;
+  }
+}
 section .hero-block-section .hero-block-container .prices .price .brown-text {
   font-size: 30px;
   font-style: normal;
@@ -1482,6 +1515,11 @@ section .hero-block-section .hero-block-container .prices .price .content .text 
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media (max-width: 550px) {
+  section .hero-block-section .hero-block-container .prices .price .content .text {
+    gap: 20px;
+  }
 }
 section .hero-block-section .hero-block-container .prices .price .content .text .h1-text {
   display: inline-flex;
@@ -1777,6 +1815,7 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
 @media (max-width: 1024px) {
   .input input {
     width: 270px;
+    font-size: 16px;
   }
 }
 .input button {
@@ -1850,6 +1889,11 @@ footer .footer-section .footer-container .footer-end {
     justify-content: space-between;
     gap: 35px;
     width: 195px;
+  }
+}
+@media (max-width: 550px) {
+  footer .footer-section .footer-container .footer-end img {
+    width: 100%;
   }
 }
 footer .footer-section .footer-container .footer-end .end {

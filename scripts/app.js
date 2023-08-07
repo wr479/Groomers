@@ -5,8 +5,9 @@ import { validation } from "./modules/valisatoin.js";
 import { utils } from "./modules/utils.js";
 import { menu } from "./modules/menu.js";
 import { price } from "./modules/price.js";
+import { choice } from "./modules/choice.js";
 
-
+choice()
 price()
 menu()
 animation_dog()

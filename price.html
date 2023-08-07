@@ -40,7 +40,8 @@
             <div class="popup">
                 <div class="panel">
                     <div class="back-call">
-                        <span class="h1-text">Обратный звонок</span>
+                        <span class="h1-text type-question">Обратный звонок</span>
+                        <span class="h1-text type-category">Оставить заявку</span>
                         <a class="popup-close" href="#"><img src="images/animate-image/x-close.svg"></a>
                     </div>
                     <div class="input">
@@ -48,7 +49,7 @@
                         <input class="val numbers-tel"  data-inputType="phone " name="phone" type="tel" placeholder="Номер телефона" required>
                         <input class=" type-question" data-inputType="type-question" placeholder="Тип вопроса" required>
                         <div class="dropdown type-category">
-                            <input type="text" for="input-category"  class="  selected-category" data-inputType="сategory" required placeholder="Выберите категорию">
+                            <input type="text" for="input-category"  class=" selected-category" data-inputType="сategory" required placeholder="Выберите категорию">
                             <label class="dropdown-list" id="input-category">
                               <span data-value="Гигиенический груминг">Гигиенический груминг</span>
                               <span data-value="Профессиональный груминг">Профессиональный груминг</span>
@@ -125,7 +126,7 @@
                                             <span class="brown-text-h1">от 5 000 ₽</span>
                                             <span class="grey-text">*Окончательная цена зависит от характеристик животного</span>
                                         </div>
-                                        <button class="btn brown price-button" onclick="insert('Гигиенический груминг')">Выбрать услугу</button>
+                                        <button class="btn brown price-button popup-open application" >Выбрать услугу</button>
                                     </div>
                                 </div>
                                 <div class=" types-grooming price" data-image="images/animate-image/funny-dog.png">                                    
@@ -150,7 +151,7 @@
                                             <span class="brown-text-h1">от 7 500 ₽</span>
                                             <span class="grey-text">*Окончательная цена зависит от характеристик животного</span>
                                         </div>
-                                        <button class="btn brown">Выбрать услугу</button>
+                                        <button class="btn brown profesional-button popup-open application">Выбрать услугу</button>
                                     </div>
                                 </div>
                                 <div class=" types-grooming price" data-image="images/animate-image/photo-dog.png">                                   
@@ -175,7 +176,7 @@
                                             <span class="brown-text-h1">от 5 000 ₽</span>
                                             <span class="grey-text">*Окончательная цена зависит от характеристик животного</span>
                                         </div>
-                                        <button class="btn brown">Выбрать услугу</button>
+                                        <button class="btn brown aesthetics-button popup-open application">Выбрать услугу</button>
                                     </div>
                                 </div>
                             </div>
@@ -224,6 +225,7 @@
     <script type="module" src="scripts/app.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
+
    
 </body>
 </html>

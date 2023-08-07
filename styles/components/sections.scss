@@ -607,6 +607,7 @@ section{
             @include padding-section;
             @include mobile{
                 padding-top: 100px;
+                padding-bottom: 80px;
             }
             .h1-text{
                 display: block;
@@ -667,8 +668,13 @@ section{
             padding: 200px 0;
             padding-bottom: 80px;
             text-align: center;
+
             @include mobile{
-                padding: 40px 0 ;
+                padding-top: 40px  ;
+            }
+            @include mobile{
+                padding-bottom: 0px;
+                margin-bottom: -60px;
             }
             .h1-text{
                 display: inline-block;
@@ -689,7 +695,9 @@ section{
                 margin-top: 120px;
                 display: flex;
                 justify-content: space-between;
-                
+                @include mobile{
+                    margin-top: 60px;
+                }
                 .p-text{
                     display: block;
                     @include heading_20;
@@ -779,6 +787,9 @@ section{
             align-items: center;
             text-align: center;
             gap: 95px;
+            @include mobile{
+                gap: 20px;
+            }
             .h1-text{
                 display: block;
                 @include heading_96;
@@ -791,6 +802,7 @@ section{
                 }
                 @include mobile{
                     width: 320px;
+                    padding-bottom: 40px;
                 }
                 .brown-text{
                     color: $brown;
@@ -972,10 +984,16 @@ section{
         background-color: #F8F8F8;
         padding-top: 200px;
         padding-bottom: 0px;
+        @include mobile{
+            padding-top: 160px;
+        }
         .hero-block-container{
             display: flex;
             flex-direction: column;
             gap: 120px;
+            @include mobile{
+                gap: 60px;
+            }
             .h1-text{
                 @include heading_48;
                 display: block;
@@ -1022,6 +1040,9 @@ section{
                         gap: 60px;
                         margin-right: 0
                     }
+                    @include mobile{
+                        padding: 60px 0;
+                    }
                     .brown-text{
                         @include heading_30;
                         color: $brown;
@@ -1037,6 +1058,9 @@ section{
                             display: flex;
                             flex-direction: column;
                             gap: 40px;
+                            @include mobile{
+                                gap: 20px;
+                            }
                             .h1-text{
                                 display: inline-flex;
                                 @include heading_30;
