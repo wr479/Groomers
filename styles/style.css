@@ -180,7 +180,7 @@ section .hero-section .hero-container .content-text {
 @media (max-width: 550px) {
   section .hero-section .hero-container .content-text {
     padding: 20px;
-    padding-right: 0;
+    padding-right: 10px;
     gap: 40px;
   }
 }
@@ -201,6 +201,7 @@ section .hero-section .hero-container .content-text .h1-text {
     font-weight: 500;
     line-height: 110%; /* 52.8px */
     letter-spacing: -0.96px;
+    width: 335px;
   }
 }
 section .hero-section .hero-container .content-text .text {

@@ -28,7 +28,7 @@ section{
                 border: 1px solid rgba(255, 255, 255, 0.10);
                 @include mobile{
                     padding: 20px;
-                    padding-right: 0;
+                    padding-right: 10px;
                     gap: 40px;
                 }
                 .h1-text{
@@ -38,6 +38,7 @@ section{
                     width: 1008px;
                     @include mobile{
                         @include heading_48;
+                        width: 335px;
                     }
                    }
                    .text{
