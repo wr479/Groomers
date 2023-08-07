@@ -470,6 +470,7 @@ section .types-grooming-section .types-grooming-container .content .cards .types
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming .mobile {
     display: flex;
     gap: 70px;
+    align-items: center;
   }
 }
 @media (max-width: 425px) {
@@ -609,6 +610,7 @@ section .types-grooming-section .types-grooming-container .content .d-block-mobi
 @media (max-width: 425px) {
   section .types-grooming-section .types-grooming-container .content .d-block-mobile {
     font-size: 20px;
+    padding: 0;
   }
 }
 @media (max-width: 425px) {
@@ -1608,6 +1610,15 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
     left: 146%;
   }
 }
+@media (max-width: 550px) {
+  .popup {
+    bottom: 25px;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    top: 25px;
+  }
+}
 
 .panel {
   display: flex;
@@ -1700,6 +1711,11 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   display: flex;
   gap: 160px;
   flex-direction: column;
+}
+@media (max-width: 550px) {
+  .panel {
+    gap: 60px;
+  }
 }
 
 .back-call {

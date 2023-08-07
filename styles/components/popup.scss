@@ -30,6 +30,13 @@
         width: 100%;
         left: 146%;
     }
+    @include mobile{
+        bottom: 25px;
+        width: 100%;
+        margin:0;
+        left: 0;
+        top: 25px;
+    }
 }
 .panel{
     display: flex;
@@ -105,6 +112,9 @@
     display: flex;
     gap: 160px;
     flex-direction: column;
+    @include mobile{
+        gap: 60px;
+    }
 }
 .back-call {
 	display: flex;

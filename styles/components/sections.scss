@@ -248,10 +248,12 @@ section{
                         .mobile{
                             @include mobile{
                                 display: flex;
-                                gap: 70px
+                                gap: 70px;
+                                align-items: center;
                             }
                             @include small-mobile{
-                                gap: 40px
+                                gap: 40px;
+                                
                             }
                             
                         }
@@ -351,6 +353,7 @@ section{
                     }
                     @include small-mobile{
                         font-size: 20px;
+                        padding: 0;
                     }
                 }
                 .types-grooming{
