@@ -410,7 +410,10 @@ section .types-grooming-section {
 }
 @media (max-width: 550px) {
   section .types-grooming-section {
-    padding: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+    border-radius: 32px;
   }
 }
 section .types-grooming-section .types-grooming-container {
@@ -1626,6 +1629,12 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
+}
+
+@media (max-width: 550px) {
+  .section-white {
+    background-color: #F8F8F8;
+  }
 }
 
 .popup-fade {

@@ -196,12 +196,17 @@ section{
                 }
             }
         }
-    }
+    }  
+    
     .types-grooming-section{
         @include padding-section;
         background-color: $white-blue;
+        
         @include mobile{
-            padding: 20px ;
+            width: 100%;
+            background-color: $white;
+            padding: 40px 0;
+            border-radius: 32px;
         }
         .types-grooming-container{
             background-color: $white;
@@ -1145,5 +1150,10 @@ section{
                 }
             }
         }
+    }
+}
+.section-white{
+    @include mobile{
+        background-color: #F8F8F8;
     }
 }
