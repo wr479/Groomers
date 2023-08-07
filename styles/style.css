@@ -507,7 +507,7 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 }
 @media (max-width: 425px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming button {
-    width: 295px;
+    width: 335px;
   }
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .brown-text {
@@ -666,7 +666,7 @@ section .stages-section .stages-container .grids {
   section .stages-section .stages-container .grids {
     display: flex;
     flex-direction: column;
-    margin-top: -22px;
+    margin-top: -26px;
   }
 }
 section .stages-section .stages-container .grids .h1-text {

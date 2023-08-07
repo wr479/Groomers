@@ -278,7 +278,7 @@ section{
                                 width: 335px;
                             }
                             @include small-mobile{
-                                width: 295px;
+                                width: 335px;
                             }
                         }
                         .brown-text{
@@ -409,7 +409,7 @@ section{
                 @include mobile{
                     display: flex;
                     flex-direction: column;
-                    margin-top: -22px;
+                    margin-top: -26px;
                 }
                 .h1-text{
                     display: block;
