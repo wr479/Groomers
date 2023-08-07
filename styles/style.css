@@ -149,6 +149,12 @@ section .hero-section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 550px) {
+  section .hero-section {
+    background-position: 59% 40%;
+    background-size: inherit;
+  }
+}
 section .hero-section .hero-container {
   padding-bottom: 20px;
   height: 100vh;
@@ -186,6 +192,7 @@ section .hero-section .hero-container .content-text .h1-text {
   line-height: 100%;
   letter-spacing: -1.92px;
   color: #ffffff;
+  width: 1008px;
 }
 @media (max-width: 550px) {
   section .hero-section .hero-container .content-text .h1-text {
@@ -203,6 +210,11 @@ section .hero-section .hero-container .content-text .text {
 @media (max-width: 550px) {
   section .hero-section .hero-container .content-text .text {
     gap: 40px;
+  }
+}
+@media (max-width: 550px) {
+  section .hero-section .hero-container .content-text .text .d-none-text {
+    display: none;
   }
 }
 section .hero-section .hero-container .content-text .text .p-text {
@@ -635,7 +647,7 @@ section .stages-section .stages-container img {
   max-width: 100%;
 }
 section .stages-section .stages-container .grids {
-  margin-top: -70px;
+  margin-top: -85px;
   display: grid;
   grid-template-columns: [col1] 50% [col2] 23% [col3] 25%;
   grid-gap: 20px;
@@ -685,16 +697,16 @@ section .stages-section .stages-container .grids .p-text {
   }
 }
 section .stages-section .stages-container .grids .two {
-  border-radius: 12px 64px 12px 12px;
+  border-radius: 12px 12px 64px 12px;
 }
 section .stages-section .stages-container .grids .three {
-  border-radius: 12px 12px 64px 12px;
+  border-radius: 12px 12px 12px 64px;
 }
 section .stages-section .stages-container .grids .four {
   border-radius: 12px 64px 12px 12px;
 }
 section .stages-section .stages-container .grids .five {
-  border-radius: 12px 64px 12px 12px;
+  border-radius: 64px 12px 12px 12px;
 }
 section .stages-section .stages-container .grids .two, section .stages-section .stages-container .grids .three, section .stages-section .stages-container .grids .four, section .stages-section .stages-container .grids .five {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -892,6 +904,7 @@ section .hero-about-section .hero-about-container .d-none-img {
 }
 section .hero-about-section .hero-about-container .d-block {
   display: block;
+  padding: 0 40px;
 }
 @media (max-width: 550px) {
   section .hero-about-section .hero-about-container .d-block {
@@ -986,6 +999,7 @@ section .command-section {
 }
 section .command-section .command-container {
   padding: 200px 0;
+  padding-bottom: 80px;
   text-align: center;
 }
 @media (max-width: 550px) {
@@ -1160,7 +1174,7 @@ section .reviews-section .reviews-container .h1-text .brown-text {
   color: rgb(154, 80, 15);
 }
 section .reviews-section .reviews-container button {
-  max-width: 890px;
+  width: 50%;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1370,6 +1384,7 @@ section .error-section .error-container .content .end .buttom {
   color: #ffffff;
   border: none;
   border-radius: 1000px;
+  cursor: pointer;
 }
 @media (max-width: 550px) {
   section .error-section .error-container .content .end .buttom {
@@ -1534,6 +1549,7 @@ section .hero-block-section .hero-block-container .prices .price .price-text {
 }
 section .hero-block-section .hero-block-container .prices .price .price-text button {
   font-size: 16px;
+  height: 41px;
 }
 @media (max-width: 1024px) {
   section .hero-block-section .hero-block-container .prices .price .price-text button {
