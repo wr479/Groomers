@@ -155,6 +155,12 @@ section .hero-section .hero-container {
   display: flex;
   align-items: flex-end;
 }
+@media (max-width: 550px) {
+  section .hero-section .hero-container {
+    padding-bottom: 0;
+    --container:100%;
+  }
+}
 section .hero-section .hero-container .content-text {
   padding: 40px;
   background-blend-mode: normal, color-burn;
@@ -168,6 +174,8 @@ section .hero-section .hero-container .content-text {
 @media (max-width: 550px) {
   section .hero-section .hero-container .content-text {
     padding: 20px;
+    padding-right: 0;
+    gap: 40px;
   }
 }
 section .hero-section .hero-container .content-text .h1-text {
@@ -192,6 +200,11 @@ section .hero-section .hero-container .content-text .text {
   display: flex;
   gap: 76px;
 }
+@media (max-width: 550px) {
+  section .hero-section .hero-container .content-text .text {
+    gap: 40px;
+  }
+}
 section .hero-section .hero-container .content-text .text .p-text {
   font-size: 20px;
   font-style: normal;
@@ -206,6 +219,7 @@ section .hero-section .hero-container .content-text .text .p-text {
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 19.2px */
+    width: 344px;
   }
 }
 section .hero-section .hero-container .content-text .text .d-none-text {
@@ -220,6 +234,11 @@ section .gryming-section {
   background-color: #F8F8F8;
   padding: 120px 0;
 }
+@media (max-width: 550px) {
+  section .gryming-section {
+    padding: 40px 0;
+  }
+}
 section .gryming-section .gryming-container {
   display: flex;
   flex-wrap: wrap;
@@ -230,6 +249,11 @@ section .gryming-section .gryming-container {
 @media (max-width: 1024px) {
   section .gryming-section .gryming-container {
     gap: 275px;
+  }
+}
+@media (max-width: 550px) {
+  section .gryming-section .gryming-container {
+    gap: 80px;
   }
 }
 section .gryming-section .gryming-container .help-gryming-text {
@@ -245,6 +269,7 @@ section .gryming-section .gryming-container .help-gryming-text {
 @media (max-width: 550px) {
   section .gryming-section .gryming-container .help-gryming-text {
     padding: 0px;
+    gap: 77px;
   }
 }
 section .gryming-section .gryming-container .help-gryming-text .parara {
@@ -372,7 +397,7 @@ section .types-grooming-section {
 }
 @media (max-width: 550px) {
   section .types-grooming-section {
-    padding: 20px 0;
+    padding: 20px;
   }
 }
 section .types-grooming-section .types-grooming-container {
@@ -461,6 +486,11 @@ section .types-grooming-section .types-grooming-container .content .cards .types
 @media (max-width: 550px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming button {
     width: 335px;
+  }
+}
+@media (max-width: 425px) {
+  section .types-grooming-section .types-grooming-container .content .cards .types-grooming button {
+    width: 295px;
   }
 }
 section .types-grooming-section .types-grooming-container .content .cards .types-grooming .brown-text {
@@ -554,11 +584,12 @@ section .types-grooming-section .types-grooming-container .content .h1-text {
     display: block;
     padding: 0;
     max-width: 471px;
+    padding-bottom: 80px;
   }
 }
 @media (max-width: 425px) {
   section .types-grooming-section .types-grooming-container .content .h1-text {
-    width: 335px;
+    max-width: 325px;
     font-size: 30px;
   }
 }
@@ -592,6 +623,11 @@ section .types-grooming-section .types-grooming-container .content .types-groomi
 section .stages-section {
   background-color: #F8F8F8;
   padding: 120px 0;
+}
+@media (max-width: 550px) {
+  section .stages-section {
+    padding: 55px 0;
+  }
 }
 section .stages-section .stages-container img {
   max-width: 100%;
@@ -745,6 +781,11 @@ section .banner-section {
   padding: 120px 0;
   padding-top: 240px;
 }
+@media (max-width: 550px) {
+  section .banner-section {
+    padding: 105px 0;
+  }
+}
 section .banner-section .banner-container {
   display: flex;
   gap: 24px;
@@ -810,6 +851,7 @@ section .banner-section .banner-container .banner-text .button-procedoor {
   border: 1px solid rgb(154, 80, 15);
   padding: 20px 0;
   border-radius: 1000px;
+  cursor: pointer;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -843,6 +885,7 @@ section .hero-about-section .hero-about-container .d-none-img {
 @media (max-width: 550px) {
   section .hero-about-section .hero-about-container .d-none-img {
     display: block;
+    padding-bottom: 60px;
   }
 }
 section .hero-about-section .hero-about-container .d-block {
@@ -962,6 +1005,12 @@ section .command-section .command-container .h1-text {
     font-size: 48px;
   }
 }
+@media (max-width: 550px) {
+  section .command-section .command-container .h1-text {
+    font-size: 30px;
+    width: 306px;
+  }
+}
 section .command-section .command-container .h1-text .brown-text {
   color: rgb(154, 80, 15);
 }
@@ -1006,13 +1055,26 @@ section .command-section .command-container .contant-card .cards .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 577px;
 }
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card .cards .card {
+    gap: 80px;
+  }
+}
 section .command-section .command-container .contant-card .cards .card .start {
   display: flex;
   flex-direction: column;
   gap: 40px;
   align-items: flex-start;
 }
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card .cards .card .start img {
+    width: 64px;
+    height: 64px;
+  }
+}
 section .command-section .command-container .contant-card .cards .card .start .name-job {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 section .command-section .command-container .contant-card .cards .card .start .name {
@@ -1023,6 +1085,11 @@ section .command-section .command-container .contant-card .cards .card .start .n
   line-height: 110%; /* 52.8px */
   letter-spacing: -0.96px;
 }
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card .cards .card .start .name {
+    font-size: 30px;
+  }
+}
 section .command-section .command-container .contant-card .cards .card .start .job {
   display: block;
   font-size: 20px;
@@ -1031,6 +1098,11 @@ section .command-section .command-container .contant-card .cards .card .start .j
   line-height: 120%; /* 24px */
   color: rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card .cards .card .start .job {
+    font-size: 16px;
+  }
+}
 section .command-section .command-container .contant-card .cards .card .end .history {
   display: block;
   font-size: 20px;
@@ -1038,6 +1110,14 @@ section .command-section .command-container .contant-card .cards .card .end .his
   font-weight: 400;
   line-height: 120%; /* 24px */
   max-width: 495px;
+}
+@media (max-width: 550px) {
+  section .command-section .command-container .contant-card .cards .card .end .history {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+  }
 }
 section .reviews-section {
   background-color: #F8F8F8;
@@ -1069,6 +1149,11 @@ section .reviews-section .reviews-container .h1-text {
     font-size: 30px;
   }
 }
+@media (max-width: 550px) {
+  section .reviews-section .reviews-container .h1-text {
+    width: 320px;
+  }
+}
 section .reviews-section .reviews-container .h1-text .brown-text {
   color: rgb(154, 80, 15);
 }
@@ -1083,6 +1168,12 @@ section .reviews-section .reviews-container button {
   border-radius: 1000px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+@media (max-width: 550px) {
+  section .reviews-section .reviews-container button {
+    width: 100%;
+    padding: 14px 0;
+  }
 }
 section .reviews-section .reviews-container .cards {
   display: grid;
@@ -1124,10 +1215,21 @@ section .reviews-section .reviews-container .cards .card img {
   width: 90px;
   height: 90px;
 }
+@media (max-width: 550px) {
+  section .reviews-section .reviews-container .cards .card img {
+    width: 64px;
+    height: 64px;
+  }
+}
 section .reviews-section .reviews-container .cards .card .start {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media (max-width: 550px) {
+  section .reviews-section .reviews-container .cards .card .start {
+    gap: 30px;
+  }
 }
 section .reviews-section .reviews-container .cards .card .start .jov-name {
   display: flex;
@@ -1205,6 +1307,7 @@ section .error-section .error-container .content {
 @media (max-width: 550px) {
   section .error-section .error-container .content {
     padding: 30px;
+    width: 355px;
   }
 }
 section .error-section .error-container .content .h1-text {
@@ -1268,7 +1371,7 @@ section .error-section .error-container .content .end .buttom {
 }
 @media (max-width: 550px) {
   section .error-section .error-container .content .end .buttom {
-    width: 335px;
+    width: 300px;
   }
 }
 section .hero-block-section {
@@ -1298,6 +1401,7 @@ section .hero-block-section .hero-block-container .h1-text {
 @media (max-width: 550px) {
   section .hero-block-section .hero-block-container .h1-text {
     font-size: 20px;
+    width: 321px;
   }
 }
 section .hero-block-section .hero-block-container .h1-text .brown-text {
@@ -1337,6 +1441,7 @@ section .hero-block-section .hero-block-container .prices .price {
   section .hero-block-section .hero-block-container .prices .price {
     flex-direction: column;
     gap: 60px;
+    margin-right: 0;
   }
 }
 section .hero-block-section .hero-block-container .prices .price .brown-text {
@@ -1686,19 +1791,19 @@ footer .footer-section .footer-container {
     gap: 32px;
   }
 }
-footer .footer-section .footer-container img .d-block-mobile {
+footer .footer-section .footer-container .d-block-mobile {
   display: none;
 }
 @media (max-width: 550px) {
-  footer .footer-section .footer-container img .d-block-mobile {
+  footer .footer-section .footer-container .d-block-mobile {
     display: block;
   }
 }
-footer .footer-section .footer-container img .d-none {
+footer .footer-section .footer-container .d-none-mobile {
   display: block;
 }
 @media (max-width: 550px) {
-  footer .footer-section .footer-container img .d-none {
+  footer .footer-section .footer-container .d-none-mobile {
     display: none;
   }
 }

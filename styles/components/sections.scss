@@ -9,6 +9,10 @@ section{
             height: calc(100vh);
             display: flex;
             align-items: flex-end;
+            @include mobile{
+                padding-bottom: 0;
+                --container:100%;
+            }
             .content-text{
                 
                 @include padding-desktop;
@@ -21,6 +25,8 @@ section{
                 border: 1px solid rgba(255, 255, 255, 0.10);
                 @include mobile{
                     padding: 20px;
+                    padding-right: 0;
+                    gap: 40px;
                 }
                 .h1-text{
                     display: block;
@@ -33,13 +39,16 @@ section{
                    .text{
                     display: flex;
                     gap: 76px;
-                    
+                    @include mobile{
+                        gap: 40px;
+                    }
                     .p-text{
                         @include heading_20;
                         color: $white;
                         display: block;
                         @include mobile{
                             @include heading_16;
+                            width: 344px;
                         }
                         
                     }
@@ -57,7 +66,9 @@ section{
     .gryming-section{
         background-color: $white-blue;
         @include padding-section;
-        
+        @include mobile{
+            padding: 40px 0;
+        }
         .gryming-container{
             display: flex;
             flex-wrap: wrap;
@@ -66,6 +77,9 @@ section{
             gap: 80px;
             @include tabletVertical{
                 gap: 275px;
+            }
+            @include mobile{
+                gap: 80px;
             }
             .help-gryming-text{
                 padding: 40px;
@@ -76,6 +90,7 @@ section{
                 }
                 @include mobile {
                     padding: 0px;
+                    gap: 77px;
                 }
                 .parara{
                     max-width: 991px;
@@ -176,7 +191,7 @@ section{
         @include padding-section;
         background-color: $white-blue;
         @include mobile{
-            padding: 20px 0;
+            padding: 20px ;
         }
         .types-grooming-container{
             background-color: $white;
@@ -245,6 +260,9 @@ section{
                             @include mobile{
                                 width: 335px;
                             }
+                            @include small-mobile{
+                                width: 295px;
+                            }
                         }
                         .brown-text{
                             display: inline-flex;
@@ -312,11 +330,13 @@ section{
                         display: block;
                         padding: 0;
                         max-width: 471px;
+                        padding-bottom:80px;
                         
                     }
                     @include small_mobile{
-                        width: 335px;
+                        max-width: 325px;
                         font-size: 30px;
+
                     }
                     .grey-text{
                         color: $grey;
@@ -352,6 +372,9 @@ section{
     .stages-section{
         background-color: #F8F8F8;
         @include padding-section;
+        @include mobile{
+            padding: 55px 0;
+        }
         .stages-container{
             img{
                 max-width: 100%;
@@ -471,7 +494,9 @@ section{
         background-color: #F8F8F8;
         @include padding-section;
         padding-top:240px ;
-        
+        @include mobile{
+            padding: 105px 0;
+        }
         .banner-container{
             display: flex;
             gap: 24px;
@@ -519,6 +544,7 @@ section{
                     border: 1px solid $brown;
                     padding: 20px 0;
                     border-radius: 1000px;
+                    cursor: pointer;
                     @include heading_20;
                     color: $brown;
                     @include mobile{
@@ -544,6 +570,7 @@ section{
                 display: none;
                 @include mobile{
                     display: block;
+                    padding-bottom: 60px;
                 }
             }
             .d-block{
@@ -634,6 +661,10 @@ section{
                 @include tabletVertical{
                     font-size: 48px;
                 }
+                @include mobile{
+                    font-size: 30px;
+                    width: 306px;
+                }
                 .brown-text{
                     color: $brown;
                 }
@@ -672,22 +703,39 @@ section{
                         border-radius: 12px 64px 12px 12px;
                         border: 1px solid  rgba(0, 0, 0, 0.10);
                         max-width: 577px;
+                        @include mobile{
+                            gap: 80px;
+                        }
                         .start{
                             display: flex;
                             flex-direction: column;
                             gap: 40px;
                             align-items: flex-start;
+                            img{
+                                @include mobile{
+                                    width: 64px;
+                                    height: 64px;
+                                }
+                            }
                             .name-job{
+                                display: flex;
+                                flex-direction: column;
                                 gap: 20px;
                             }
                             .name{
                                 display: block;
                                 @include heading_48;
+                                @include mobile{
+                                    font-size: 30px;
+                                }
                             }
                             .job{
                                 display: block;
                                 @include heading_20;
                                 color: rgba(0, 0, 0, 0.40);
+                                @include mobile{
+                                    font-size: 16px;
+                                }
                             }
                         }
                         .end{
@@ -695,6 +743,9 @@ section{
                                 display: block;
                                 @include heading_20;
                                 max-width: 495px;
+                                @include mobile{
+                                    @include heading_16;
+                                }
                             }
                         }
                     }
@@ -722,6 +773,9 @@ section{
                 @include tabletVertical{
                     font-size: 30px;
                 }
+                @include mobile{
+                    width: 320px;
+                }
                 .brown-text{
                     color: $brown;
                 }
@@ -736,7 +790,8 @@ section{
                 border: 1px solid rgba(0, 0, 0, 0.10);
                 cursor: pointer;
                 @include mobile{
-                    
+                    width: 100%;
+                    padding: 14px 0;
                 }
             }
             .cards{
@@ -768,11 +823,18 @@ section{
                     img{
                         width: 90px;
                         height: 90px;
+                        @include mobile{
+                            width: 64px;
+                            height: 64px;
+                        }
                     }
                     .start{
                         display: flex;
                         flex-direction: column;
                         gap: 40px;
+                        @include mobile{
+                            gap: 30px;
+                        }
                         .jov-name{
                             display: flex;
                             flex-direction: column;
@@ -840,6 +902,7 @@ section{
                 gap: 120px;
                 @include mobile{
                     padding: 30px;
+                    width: 355px;
                 }
                 .h1-text{
                     display: block;
@@ -881,7 +944,7 @@ section{
                         border: none;
                         border-radius: 1000px;
                         @include mobile{
-                            width: 335px;
+                            width: 300px;
                         }
                     }
                 }
@@ -905,6 +968,7 @@ section{
                 }
                 @include mobile{
                     font-size: 20px;
+                    width: 321px;
                 }
                 .brown-text{
                     color: $brown;
@@ -939,6 +1003,7 @@ section{
                     @include tabletVertical{
                         flex-direction: column;
                         gap: 60px;
+                        margin-right: 0
                     }
                     .brown-text{
                         @include heading_30;

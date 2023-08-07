@@ -16,20 +16,20 @@ footer{
                 padding: 30px;
                 gap: 32px;
             }
-            img{
+    
                 .d-block-mobile{
                     display: none;
                     @include mobile{
                         display: block;
                     }
                 }
-                .d-none{
+                .d-none-mobile{
                     display: block;
                     @include mobile{
                         display: none;
                     }
                 }
-            }
+            
             .footer-end{
                 display: flex;
                 justify-content: space-between;
