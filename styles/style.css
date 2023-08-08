@@ -22,6 +22,11 @@
     --container:880px;
   }
 }
+@media (max-width: 1024px) {
+  :root {
+    --container:650px ;
+  }
+}
 @media (max-width: 550px) {
   :root {
     --container:500px;
@@ -192,7 +197,12 @@ section .hero-section .hero-container .content-text .h1-text {
   line-height: 100%;
   letter-spacing: -1.92px;
   color: #ffffff;
-  width: 1008px;
+  max-width: 1008px;
+}
+@media (max-width: 1024px) {
+  section .hero-section .hero-container .content-text .h1-text {
+    font-size: 36px;
+  }
 }
 @media (max-width: 550px) {
   section .hero-section .hero-container .content-text .h1-text {
@@ -476,13 +486,13 @@ section .types-grooming-section .types-grooming-container .content .cards .types
   border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.1));
   opacity: 0.400000006;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming {
     flex-direction: column;
     gap: 45px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming .mobile {
     display: flex;
     gap: 70px;
@@ -499,6 +509,11 @@ section .types-grooming-section .types-grooming-container .content .cards .types
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
+}
+@media (max-width: 1024px) {
+  section .types-grooming-section .types-grooming-container .content .cards .types-grooming button {
+    max-width: 612px;
+  }
 }
 @media (max-width: 550px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming button {
@@ -536,7 +551,7 @@ section .types-grooming-section .types-grooming-container .content .cards .types
   border: none;
   width: 100%;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .types-grooming-section .types-grooming-container .content .cards .types-grooming .text .h1-text {
     display: none;
   }
@@ -596,6 +611,12 @@ section .types-grooming-section .types-grooming-container .content .h1-text {
     font-size: 36px;
   }
 }
+@media (max-width: 1024px) {
+  section .types-grooming-section .types-grooming-container .content .h1-text {
+    font-size: 24px;
+    width: 100%;
+  }
+}
 @media (max-width: 550px) {
   section .types-grooming-section .types-grooming-container .content .h1-text {
     display: block;
@@ -621,6 +642,8 @@ section .types-grooming-section .types-grooming-container .content .d-block-mobi
 @media (max-width: 1024px) {
   section .types-grooming-section .types-grooming-container .content .d-block-mobile {
     display: block;
+    font-size: 28px;
+    padding: 0;
   }
 }
 @media (max-width: 425px) {
@@ -658,11 +681,6 @@ section .stages-section .stages-container .grids {
   grid-template-rows: [row1] 62% [row2] 85%;
 }
 @media (max-width: 1024px) {
-  section .stages-section .stages-container .grids {
-    grid-template-rows: [row1] 62% [row2] 62%;
-  }
-}
-@media (max-width: 550px) {
   section .stages-section .stages-container .grids {
     display: flex;
     flex-direction: column;
@@ -722,7 +740,7 @@ section .stages-section .stages-container .grids .two, section .stages-section .
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .stages-section .stages-container .grids .two, section .stages-section .stages-container .grids .three, section .stages-section .stages-container .grids .four, section .stages-section .stages-container .grids .five {
     gap: 55px;
     padding: 30px;
@@ -822,6 +840,12 @@ section .banner-section .banner-container {
     max-width: 453px;
   }
 }
+@media (max-width: 1024px) {
+  section .banner-section .banner-container img {
+    width: 50%;
+    height: 100%;
+  }
+}
 @media (max-width: 550px) {
   section .banner-section .banner-container img {
     width: 100%;
@@ -856,6 +880,11 @@ section .banner-section .banner-container .banner-text .h1-text {
 @media (max-width: 1024px) {
   section .banner-section .banner-container .banner-text .h1-text {
     font-size: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  section .banner-section .banner-container .banner-text .h1-text {
+    font-size: 24px;
   }
 }
 @media (max-width: 550px) {
@@ -916,7 +945,7 @@ section .hero-about-section .hero-about-container .d-block {
   }
 }
 section .hero-about-section .hero-about-container img {
-  max-width: 100%;
+  width: 100%;
 }
 section .groomers-content-section {
   background-color: #F8F8F8;
@@ -1060,7 +1089,7 @@ section .command-section .command-container .contant-card .p-text {
   color: rgba(0, 0, 0, 0.4);
   text-align: left;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .command-section .command-container .contant-card .command {
     display: none;
   }
@@ -1070,7 +1099,7 @@ section .command-section .command-container .contant-card .cards {
   justify-content: space-between;
   gap: 20px;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .command-section .command-container .contant-card .cards {
     flex-direction: column;
   }
@@ -1098,7 +1127,7 @@ section .command-section .command-container .contant-card .cards .card .start {
   gap: 40px;
   align-items: flex-start;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .command-section .command-container .contant-card .cards .card .start img {
     width: 64px;
     height: 64px;
@@ -1117,7 +1146,7 @@ section .command-section .command-container .contant-card .cards .card .start .n
   line-height: 110%; /* 52.8px */
   letter-spacing: -0.96px;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .command-section .command-container .contant-card .cards .card .start .name {
     font-size: 30px;
   }
@@ -1143,7 +1172,7 @@ section .command-section .command-container .contant-card .cards .card .end .his
   line-height: 120%; /* 24px */
   max-width: 495px;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   section .command-section .command-container .contant-card .cards .card .end .history {
     font-size: 16px;
     font-style: normal;
@@ -1461,6 +1490,11 @@ section .hero-block-section .hero-block-container .prices {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 1024px) {
+  section .hero-block-section .hero-block-container .prices {
+    width: 100%;
+  }
+}
 section .hero-block-section .hero-block-container .prices img {
   position: -webkit-sticky;
   position: sticky;
@@ -1491,6 +1525,11 @@ section .hero-block-section .hero-block-container .prices .price {
     flex-direction: column;
     gap: 60px;
     margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  section .hero-block-section .hero-block-container .prices .price {
+    width: 100%;
   }
 }
 @media (max-width: 550px) {
@@ -1587,6 +1626,7 @@ section .hero-block-section .hero-block-container .prices .price .price-text {
     text-align: left;
     align-items: flex-start;
     gap: 40px;
+    width: 100%;
   }
 }
 section .hero-block-section .hero-block-container .prices .price .price-text button {
@@ -1595,7 +1635,7 @@ section .hero-block-section .hero-block-container .prices .price .price-text but
 }
 @media (max-width: 1024px) {
   section .hero-block-section .hero-block-container .prices .price .price-text button {
-    width: 335px;
+    width: 100%;
   }
 }
 section .hero-block-section .hero-block-container .prices .price .price-text .end {
@@ -1629,6 +1669,11 @@ section .hero-block-section .hero-block-container .prices .price .price-text .en
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
+}
+@media (max-width: 1024px) {
+  section .hero-block-section .hero-block-container .prices .price .price-text .end .grey-text {
+    width: 234px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1929,7 +1974,7 @@ footer .footer-section .footer-container .footer-end .def {
   color: #ffffff;
   width: 250px;
 }
-@media (max-width: 550px) {
+@media (max-width: 1024px) {
   footer .footer-section .footer-container .footer-end .def {
     font-size: 16px;
     width: 195px;
@@ -1984,6 +2029,11 @@ footer .footer-section .footer-container .footer-end .politic span {
 @media (max-width: 1024px) {
   :root {
     --container:880px;
+  }
+}
+@media (max-width: 1024px) {
+  :root {
+    --container:650px ;
   }
 }
 @media (max-width: 550px) {

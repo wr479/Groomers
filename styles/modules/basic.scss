@@ -17,6 +17,9 @@
     @include tabletVertical{
         --container:880px;
     };
+    @include small_tabletVertical(){
+        --container:650px
+    };
     @include mobile{
         --container:500px;
     };

@@ -26,6 +26,7 @@ section{
                 gap: 60px;
                 border-radius: 12px 64px 12px 0px;
                 border: 1px solid rgba(255, 255, 255, 0.10);
+                
                 @include mobile{
                     padding: 20px;
                     padding-right: 10px;
@@ -35,7 +36,10 @@ section{
                     display: block;
                     @include heading_96;
                     color: $white;
-                    width: 1008px;
+                    max-width: 1008px;
+                    @include tabletVertical{
+                        font-size: 36px;
+                    }
                     @include mobile{
                         @include heading_48;
                         width: 335px;
@@ -256,12 +260,12 @@ section{
                         padding:40px 0 ;
                         border-bottom: 1px solid var(--black-10, rgba(0, 0, 0, 0.10));
                         opacity: 0.4000000059604645;
-                        @include mobile{
+                        @include tabletVertical{
                             flex-direction: column;
                             gap: 45px;
                         }
                         .mobile{
-                            @include mobile{
+                            @include tabletVertical{
                                 display: flex;
                                 gap: 70px;
                                 align-items: center;
@@ -274,6 +278,9 @@ section{
                         }
                         button{
                             @include heading_16;
+                            @include tabletVertical{
+                                max-width: 612px;
+                            }
                             @include mobile{
                                 width: 335px;
                             }
@@ -297,7 +304,7 @@ section{
                                 padding-bottom: 0;
                                 border: none;
                                 width: 100%;
-                                    @include mobile{
+                                    @include tabletVertical{
                                         display: none;
                                     }
                                 
@@ -343,6 +350,10 @@ section{
                         font-size: 36px;
                         
                     }
+                    @include small_tabletVertical{
+                        font-size: 24px;
+                        width: 100%;
+                    }
                     @include mobile{
                         display: block;
                         padding: 0;
@@ -365,6 +376,8 @@ section{
                     display: none;
                     @include tabletVertical{
                         display: block;
+                        font-size: 28px;
+                        padding: 0;
                     }
                     @include small-mobile{
                         font-size: 20px;
@@ -404,9 +417,6 @@ section{
                 grid-gap: 20px;
                 grid-template-rows: [row1] 62% [row2] 85%;
                 @include tabletVertical{
-                    grid-template-rows: [row1] 62% [row2] 62%;
-                }
-                @include mobile{
                     display: flex;
                     flex-direction: column;
                     margin-top: -26px;
@@ -450,7 +460,7 @@ section{
                     align-content: space-between;
                     flex-direction: column;
                     justify-content: space-between;
-                    @include mobile{
+                    @include tabletVertical{
                         gap: 55px;
                         padding: 30px;
                     }
@@ -529,6 +539,10 @@ section{
                 @include tabletVertical{
                     max-width: 453px;
                 }
+                @include small_tabletVertical{
+                    width: 50%;
+                    height: 100%;
+                }
                 @include mobile{
                     width: 100%;
                 }
@@ -551,6 +565,9 @@ section{
                     }
                     @include tabletVertical{
                         font-size: 36px;
+                    }
+                    @include small_tabletVertical{
+                        font-size: 24px;
                     }
                     @include mobile{
                         font-size: 30px;
@@ -600,7 +617,7 @@ section{
                 }
             }
             img{
-                max-width: 100%;
+                width: 100%;
             }
             
         }
@@ -710,7 +727,7 @@ section{
                     text-align: left
                 }
                 .command{
-                    @include mobile{
+                    @include small_tabletVertical{
                          display: none;
                     }
                 }
@@ -718,7 +735,7 @@ section{
                     display: flex;
                     justify-content: space-between;
                     gap: 20px;
-                    @include mobile{
+                    @include small_tabletVertical{
                         flex-direction: column
                     }
                     .card{
@@ -741,7 +758,7 @@ section{
                             gap: 40px;
                             align-items: flex-start;
                             img{
-                                @include mobile{
+                                @include small_tabletVertical{
                                     width: 64px;
                                     height: 64px;
                                 }
@@ -754,7 +771,7 @@ section{
                             .name{
                                 display: block;
                                 @include heading_48;
-                                @include mobile{
+                                @include small_tabletVertical{
                                     font-size: 30px;
                                 }
                             }
@@ -772,7 +789,7 @@ section{
                                 display: block;
                                 @include heading_20;
                                 max-width: 495px;
-                                @include mobile{
+                                @include small_tabletVertical{
                                     @include heading_16;
                                 }
                             }
@@ -1018,6 +1035,9 @@ section{
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                @include small_tabletVertical{
+                    width: 100%;
+                }
                 img{
                     position: -webkit-sticky;
                     position: sticky;
@@ -1043,7 +1063,11 @@ section{
                     @include tabletVertical{
                         flex-direction: column;
                         gap: 60px;
-                        margin-right: 0
+                        margin-right: 0;
+                        
+                    }
+                    @include small_tabletVertical{
+                        width: 100%;
                     }
                     @include mobile{
                         padding: 60px 0;
@@ -1114,12 +1138,13 @@ section{
                             text-align: left;
                             align-items: flex-start;
                             gap: 40px;
+                            width: 100%;
                         }
                         button{
                             font-size: 16px;
                             height: 41px;
                             @include tabletVertical{
-                                width: 335px;
+                                width: 100%;
                             }
                         }
                         .end{
@@ -1142,6 +1167,9 @@ section{
                                 opacity: 0.20000000298023224;
                                 display: block;
                                 @include heading_16;
+                                @include small_tabletVertical{
+                                    width: 234px;
+                                }
                             }
                         }
 
